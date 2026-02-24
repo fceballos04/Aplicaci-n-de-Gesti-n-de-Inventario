@@ -14,7 +14,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Invex_App
-build_property.ProjectDir = C:\Users\cebal\OneDrive\Desktop\Invex_App\Invex_App\
+build_property.ProjectDir = C:\Users\cebal\OneDrive\Desktop\Invex_App\Aplicaci-n-de-Gesti-n-de-Inventario\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -28,7 +28,7 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/cebal/OneDrive/Desktop/Invex_App/Invex_App/App.xaml]
+[C:/Users/cebal/OneDrive/Desktop/Invex_App/Aplicaci-n-de-Gesti-n-de-Inventario/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
@@ -38,7 +38,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/cebal/OneDrive/Desktop/Invex_App/Invex_App/AppShell.xaml]
+[C:/Users/cebal/OneDrive/Desktop/Invex_App/Aplicaci-n-de-Gesti-n-de-Inventario/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
@@ -48,7 +48,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/cebal/OneDrive/Desktop/Invex_App/Invex_App/LoginViews/Login.xaml]
+[C:/Users/cebal/OneDrive/Desktop/Invex_App/Aplicaci-n-de-Gesti-n-de-Inventario/LoginViews/Login.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.LoginViews.Login.xaml
 build_metadata.AdditionalFiles.TargetPath = LoginViews\Login.xaml
@@ -58,7 +58,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/cebal/OneDrive/Desktop/Invex_App/Invex_App/MainPage.xaml]
+[C:/Users/cebal/OneDrive/Desktop/Invex_App/Aplicaci-n-de-Gesti-n-de-Inventario/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
@@ -68,7 +68,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/cebal/OneDrive/Desktop/Invex_App/Invex_App/Resources/Styles/Colors.xaml]
+[C:/Users/cebal/OneDrive/Desktop/Invex_App/Aplicaci-n-de-Gesti-n-de-Inventario/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
@@ -78,7 +78,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/cebal/OneDrive/Desktop/Invex_App/Invex_App/Resources/Styles/Styles.xaml]
+[C:/Users/cebal/OneDrive/Desktop/Invex_App/Aplicaci-n-de-Gesti-n-de-Inventario/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

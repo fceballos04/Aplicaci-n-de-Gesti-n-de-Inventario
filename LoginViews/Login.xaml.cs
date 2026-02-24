@@ -52,7 +52,7 @@ namespace Invex_App.LoginViews
 
         private async void OnSubmitLoginClicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Invex", "Sesión iniciada con éxito", "OK");
+            await DisplayAlert("Invex", "Inicio de sesion exitoso", "OK");
         }
 
         private async void OnSubmitRegisterClicked(object sender, EventArgs e)
