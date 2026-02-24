@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\cebal\\OneDrive\\Desktop\\Invex_App\\Aplicaci-n-de-Gesti-n-de-Inventario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\cebal\\onedrive\\desktop\\invex_app\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\cebal\\onedrive\\desktop\\invex_app\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\cebal\\onedrive\\desktop\\invex_app\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cebal\\OneDrive\\Desktop\\Invex_App\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml.cs",
               "RelativeDocumentMoniker": "LoginViews\\Login.xaml.cs",
               "ToolTip": "C:\\Users\\cebal\\OneDrive\\Desktop\\Invex_App\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml.cs",
               "RelativeToolTip": "LoginViews\\Login.xaml.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowDgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA5wCwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T06:50:35.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Login.xaml",
               "DocumentMoniker": "C:\\Users\\cebal\\OneDrive\\Desktop\\Invex_App\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml",
               "RelativeDocumentMoniker": "LoginViews\\Login.xaml",
               "ToolTip": "C:\\Users\\cebal\\OneDrive\\Desktop\\Invex_App\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml",
               "RelativeToolTip": "LoginViews\\Login.xaml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-24T06:50:20.122Z",
               "EditorCaption": ""
