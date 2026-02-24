@@ -14,6 +14,7 @@
             <Label Text="Gestión Inteligente de Stock" TextColor="#D1D1D1" FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
 
             <VerticalStackLayout x:Name="InitialButtonsContainer" Spacing="20" IsVisible="True">
+                
                 <Button Text="INICIAR SESIÓN" 
                         BackgroundColor="#1A56A6" 
                         TextColor="White" 
@@ -42,8 +43,12 @@
             </VerticalStackLayout>
 
             <VerticalStackLayout x:Name="LoginFormContainer" Spacing="15" IsVisible="False">
+                
                 <Entry Placeholder="Correo electrónico" 
-                       PlaceholderColor="#AAA" TextColor="White" HeightRequest="50"/>
+                       PlaceholderColor="#AAA" 
+                       TextColor="White" 
+                       HeightRequest="50"/>
+                
                 <Entry Placeholder="Contraseña" 
                        PlaceholderColor="#AAA" TextColor="White" IsPassword="True" HeightRequest="50"/>
 
@@ -71,16 +76,34 @@
             </VerticalStackLayout>
 
             <VerticalStackLayout x:Name="RegisterFormContainer" Spacing="15" IsVisible="False">
-                <Entry Placeholder="Nombre de la empresa o negocio" 
-                       PlaceholderColor="#AAA" TextColor="White" HeightRequest="50"/>
 
-                <Entry Placeholder="Correo electrónico" 
-                       PlaceholderColor="#AAA" TextColor="White" HeightRequest="50" Keyboard="Email"/>
+                    <Entry x:Name="TxtEmpresa" 
+                       Placeholder="Nombre de la empresa o negocio" 
+                       PlaceholderColor="#AAA" 
+                       TextColor="White" 
+                       HeightRequest="50"/>
 
-                <Entry Placeholder="Contraseña" 
-                       PlaceholderColor="#AAA" TextColor="White" IsPassword="True" HeightRequest="50"/>
+                    <Entry  x:Name="TxtEmail" 
+                        Placeholder="Correo electrónico" 
+                        PlaceholderColor="#AAA" 
+                        TextColor="White" 
+                        HeightRequest="50" 
+                        Keyboard="Email"/>
 
-                <Button Text="REGISTRARSE" 
+                    <Entry  x:Name="TxtContraseña"
+                        Placeholder="Contraseña" 
+                        PlaceholderColor="#AAA" 
+                        TextColor="White" 
+                        IsPassword="True" 
+                        HeightRequest="50"/>
+                
+                    <Label x:Name="LabelError" 
+                           Text="Todos los campos son obligatorios" 
+                           TextColor="Red" 
+                           IsVisible="False" 
+                           FontSize="15"/>
+
+                    <Button Text="REGISTRARSE" 
                         BackgroundColor="#1A56A6" 
                         TextColor="White" 
                         HeightRequest="55" 
@@ -91,9 +114,11 @@
                         TextColor="White" 
                         BackgroundColor="Transparent" 
                         Clicked="OnBackClicked"/>
+                
             </VerticalStackLayout>
             
             <VerticalStackLayout x:Name="OlvidasteContraseñaFormContainer" Spacing="15" Padding="40" VerticalOptions="Center" IsVisible="False">
+                
                 <Label Text="Ingresa tu correo electronico para mandarte más información"
                        HorizontalOptions="Center"
                        TextColor="White"
