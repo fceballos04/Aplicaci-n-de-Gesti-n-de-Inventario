@@ -42,6 +42,7 @@ namespace Invex_App.LoginViews
         private async void OnOlvidasteContraseñaClicked(object sender, EventArgs e)
         {
             InitialButtonsContainer.IsVisible = false;
+            LoginFormContainer.IsVisible = false;
             OlvidasteContraseñaFormContainer.Opacity = 0;
             OlvidasteContraseñaFormContainer.IsVisible = true;
 
