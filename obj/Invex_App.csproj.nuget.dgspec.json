@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cebal\\OneDrive\\Desktop\\Invex_App\\Aplicaci-n-de-Gesti-n-de-Inventario\\Invex_App.csproj": {}
+    "C:\\Users\\aldol\\OneDrive\\Escritorio\\Proyecto Joshua\\Aplicaci-n-de-Gesti-n-de-Inventario\\Invex_App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cebal\\OneDrive\\Desktop\\Invex_App\\Aplicaci-n-de-Gesti-n-de-Inventario\\Invex_App.csproj": {
+    "C:\\Users\\aldol\\OneDrive\\Escritorio\\Proyecto Joshua\\Aplicaci-n-de-Gesti-n-de-Inventario\\Invex_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cebal\\OneDrive\\Desktop\\Invex_App\\Aplicaci-n-de-Gesti-n-de-Inventario\\Invex_App.csproj",
+        "projectUniqueName": "C:\\Users\\aldol\\OneDrive\\Escritorio\\Proyecto Joshua\\Aplicaci-n-de-Gesti-n-de-Inventario\\Invex_App.csproj",
         "projectName": "Invex_App",
-        "projectPath": "C:\\Users\\cebal\\OneDrive\\Desktop\\Invex_App\\Aplicaci-n-de-Gesti-n-de-Inventario\\Invex_App.csproj",
-        "packagesPath": "C:\\Users\\cebal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cebal\\OneDrive\\Desktop\\Invex_App\\Aplicaci-n-de-Gesti-n-de-Inventario\\obj\\",
+        "projectPath": "C:\\Users\\aldol\\OneDrive\\Escritorio\\Proyecto Joshua\\Aplicaci-n-de-Gesti-n-de-Inventario\\Invex_App.csproj",
+        "packagesPath": "C:\\Users\\aldol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aldol\\OneDrive\\Escritorio\\Proyecto Joshua\\Aplicaci-n-de-Gesti-n-de-Inventario\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cebal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aldol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

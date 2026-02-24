@@ -82,7 +82,7 @@ namespace Invex_App.LoginViews
 
         private async void OnGoogleLoginTapped(object sender, EventArgs e)
         {
-            await DisplayAlert("Google", "Conectando...", "OK");
+            await DisplayAlert("Google", "Conectando con Google...", "OK");
         }
         private async void OnRecuperarContraseñaClicked(object sender, EventArgs e)
         {
