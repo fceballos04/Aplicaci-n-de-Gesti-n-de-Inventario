@@ -1,0 +1,120 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Invex_App.LoginViews.Login"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+        <Image Source="inventario.png" Aspect="AspectFill" />
+        <BoxView Color="Black" Opacity="0.5" />
+
+        <VerticalStackLayout Spacing="20" Padding="40" VerticalOptions="Center">
+
+            <Label Text="INVEX" TextColor="White" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Label Text="Gestión Inteligente de Stock" TextColor="#D1D1D1" FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
+
+            <VerticalStackLayout x:Name="InitialButtonsContainer" Spacing="20" IsVisible="True">
+                <Button Text="INICIAR SESIÓN" 
+                        BackgroundColor="#1A56A6" 
+                        TextColor="White" 
+                        HeightRequest="55" 
+                        CornerRadius="28"
+                        Clicked="OnLoginClicked"/>
+
+                <Button Text="CREAR CUENTA" 
+                        BackgroundColor="Transparent" 
+                        BorderColor="White"
+                        BorderWidth="2"
+                        TextColor="White" 
+                        HeightRequest="55" 
+                        CornerRadius="28"
+                        Clicked="OnCreateAccountClicked"/>
+
+                <Button Text="¿Olvidaste la contraseña?" 
+                         BackgroundColor="Transparent" 
+                         TextColor="White" 
+                         HeightRequest="26" 
+                         CornerRadius="28"
+                         Margin="0,10"
+                        HorizontalOptions="Center"
+                         Clicked="OnOlvidasteContraseñaClicked"/>
+
+                <Border StrokeShape="RoundRectangle 28" BackgroundColor="White" HeightRequest="55">
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="15">
+                        <Image Source="google.png" HeightRequest="25" VerticalOptions="Center"/>
+                        <Label Text="Continuar con Google" TextColor="#444" VerticalOptions="Center" FontAttributes="Bold"/>
+                    </HorizontalStackLayout>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGoogleLoginTapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout x:Name="LoginFormContainer" Spacing="15" IsVisible="False">
+                <Entry Placeholder="Correo electrónico" 
+                       PlaceholderColor="#AAA" TextColor="White" HeightRequest="50"/>
+                <Entry Placeholder="Contraseña" 
+                       PlaceholderColor="#AAA" TextColor="White" IsPassword="True" HeightRequest="50"/>
+
+                <Button Text="INGRESAR" 
+                        BackgroundColor="#1A56A6" 
+                        TextColor="White" 
+                        HeightRequest="55" 
+                        CornerRadius="28"
+                        Clicked="OnSubmitLoginClicked"/>
+
+                <Button Text="Volver" 
+                        TextColor="White" 
+                        BackgroundColor="Transparent" 
+                        Clicked="OnBackClicked"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout x:Name="RegisterFormContainer" Spacing="15" IsVisible="False">
+                <Entry Placeholder="Nombre de la empresa o negocio" 
+                       PlaceholderColor="#AAA" TextColor="White" HeightRequest="50"/>
+
+                <Entry Placeholder="Correo electrónico" 
+                       PlaceholderColor="#AAA" TextColor="White" HeightRequest="50" Keyboard="Email"/>
+
+                <Entry Placeholder="Contraseña" 
+                       PlaceholderColor="#AAA" TextColor="White" IsPassword="True" HeightRequest="50"/>
+
+                <Button Text="REGISTRARSE" 
+                        BackgroundColor="#1A56A6" 
+                        TextColor="White" 
+                        HeightRequest="55" 
+                        CornerRadius="28"
+                        Clicked="OnSubmitRegisterClicked"/>
+
+                <Button Text="Volver" 
+                        TextColor="White" 
+                        BackgroundColor="Transparent" 
+                        Clicked="OnBackClicked"/>
+            </VerticalStackLayout>
+            
+            <VerticalStackLayout x:Name="OlvidasteContraseñaFormContainer" Spacing="15" Padding="40" VerticalOptions="Center" IsVisible="False">
+                <Label Text="Ingresa tu correo electronico para mandarte más información"
+                       HorizontalOptions="Center"
+                       TextColor="White"
+                       HeightRequest="25"/>
+
+                <Entry Placeholder="Correo electrónico" 
+                       PlaceholderColor="#AAA" 
+                       TextColor="White" 
+                       HeightRequest="50"/>
+
+                <Button Text="ENVIAR"
+                        TextColor="White"
+                        BackgroundColor="#1A56A6"                         
+                        HeightRequest="55" 
+                        CornerRadius="28"
+                        Clicked="OnRecuperarContraseñaClicked"/>
+
+                <Button Text="Volver" 
+                        TextColor="White" 
+                        BackgroundColor="Transparent" 
+                        Clicked="OnBackClicked"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
