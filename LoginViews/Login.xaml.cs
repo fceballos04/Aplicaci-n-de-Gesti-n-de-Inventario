@@ -95,7 +95,7 @@ namespace Invex_App.LoginViews
         }
         private async void OnRecuperarContraseñaClicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Invex", "Datos correctos", "OK");
+            await DisplayAlert("Invex", "Los datos son correctos", "OK");
         }
     }
 }
