@@ -50,7 +50,16 @@ namespace Invex_App.LoginViews
         }
 
         //ACCIONES (POR EL MOMENTO)
-
+        private void OnLoginPasswordClicked(object sender, EventArgs e)
+        {
+            LoginPasswordEntry.IsPassword = !LoginPasswordEntry.IsPassword;
+            ToggleLoginPasswordButton.Source = LoginPasswordEntry.IsPassword ? "ojo_cerrado.png" : "ojo_abierto.png";
+        }
+        private void OnToggleRegisterPasswordClicked(object sender, EventArgs e)
+        {
+            RegisterPasswordEntry.IsPassword = !RegisterPasswordEntry.IsPassword;
+            ToggleRegisterPasswordButton.Source = RegisterPasswordEntry.IsPassword ? "ojo_cerrado.png" : "ojo_abierto.png";
+        }
         private async void OnSubmitLoginClicked(object sender, EventArgs e)
         {
              await DisplayAlert("Invex", "Inicio de sesion exitoso", "OK");
@@ -61,7 +70,7 @@ namespace Invex_App.LoginViews
             // Se extrae los textos de los campos (el ?.Trim() elimina los espacios accidentales al inicio o final)
             string nombreEmpresa = TxtEmpresa.Text?.Trim();
             string correo = TxtEmail.Text?.Trim();
-            string contraseña = TxtContraseña.Text;
+            string contraseña = RegisterPasswordEntry.Text;
 
             if (string.IsNullOrWhiteSpace(nombreEmpresa) ||
                 string.IsNullOrWhiteSpace(correo) ||
@@ -86,20 +95,7 @@ namespace Invex_App.LoginViews
         }
         private async void OnRecuperarContraseñaClicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Invex", "Datos correctos", "OK");
-        }
-        private void ValidarCampos()
-        {
-            // Si está vacío se muestra el LabelError 
-            bool hayError = LabelError.IsVisible = string.IsNullOrWhiteSpace(TxtContraseña.Text);
-                            LabelError.IsVisible = string.IsNullOrWhiteSpace(TxtEmail.Text);
-                            LabelError.IsVisible = string.IsNullOrWhiteSpace(TxtEmpresa.Text);
-
-            LabelError.IsVisible = hayError;
-
-            TxtContraseña.PlaceholderColor = string.IsNullOrWhiteSpace(TxtContraseña.Text) ? Colors.Red : Colors.Gray;
-            TxtEmail.PlaceholderColor = string.IsNullOrWhiteSpace(TxtEmail.Text) ? Colors.Red : Colors.Gray;
-            TxtEmpresa.PlaceholderColor = string.IsNullOrWhiteSpace(TxtEmpresa.Text) ? Colors.Red : Colors.Gray;
+            await DisplayAlert("Invex", "Los datos son correctos", "OK");
         }
     }
 }
