@@ -10,7 +10,7 @@
 
         <VerticalStackLayout Spacing="20" Padding="40" VerticalOptions="Center">
 
-            <Label Text="INVEX" TextColor="White" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Label Text="ANTHIVE STOCK" TextColor="White" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
             <Label Text="Gestión Inteligente de Stock" TextColor="#D1D1D1" FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
 
             <VerticalStackLayout x:Name="InitialButtonsContainer" Spacing="20" IsVisible="True">
