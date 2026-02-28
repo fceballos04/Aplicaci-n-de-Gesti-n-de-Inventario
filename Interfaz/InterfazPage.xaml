@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Invex_App.Interfaz.InterfazPage"
+             Title="InterfazPage">
+
+    <VerticalStackLayout Padding="20"
+            Spacing="25">
+
+        <Label
+            Text="Bienvenido a ANTHIVE STOCK"
+            FontSize="26"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"/>
+
+        <Button
+            Text="Inventario"
+            BackgroundColor="#2D5DA8"
+            TextColor="White"
+            CornerRadius="15"/>
+
+        <Button
+            Text="Órdenes"
+            BackgroundColor="#3FA34D"
+            TextColor="White"
+            CornerRadius="15"/>
+    </VerticalStackLayout>
+</ContentPage>

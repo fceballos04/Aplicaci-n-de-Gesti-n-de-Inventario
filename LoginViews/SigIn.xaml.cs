@@ -1,12 +1,14 @@
 namespace Invex_App.LoginViews;
 
+using Invex_App.Interfaz;
+
 public partial class SigIn : ContentPage
 {
-	public SigIn()
-	{
-		InitializeComponent();
-	}
-     //NAVEGACIÓN
+    public SigIn()
+    {
+        InitializeComponent();
+    }
+    //NAVEGACIÓN
     private async void OnBackClicked(object sender, EventArgs e)
     {
         await Navigation.PopModalAsync(animated: true);
@@ -26,5 +28,7 @@ public partial class SigIn : ContentPage
     private async void OnSubmitLoginClicked(object sender, EventArgs e)
     {
         await DisplayAlert("Invex", "Inicio de sesion exitoso", "OK");
+
+        Application.Current.MainPage = new NavigationPage(new InterfazPage());
     }
 }
