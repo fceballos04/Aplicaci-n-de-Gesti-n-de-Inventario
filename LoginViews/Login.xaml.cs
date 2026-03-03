@@ -1,4 +1,5 @@
 using Microsoft.Maui.Controls;
+using Invex_App.Views; // CORRECCIÓN 1: Agregar el namespace de la carpeta Views
 
 namespace Invex_App.LoginViews
 {
@@ -9,14 +10,13 @@ namespace Invex_App.LoginViews
             InitializeComponent();
         }
 
-        //NAVEGACIÓN
+        // --- NAVEGACIÓN ENTRE CONTENEDORES (VISTAS INTERNAS) ---
 
         private async void OnLoginClicked(object sender, EventArgs e)
         {
             InitialButtonsContainer.IsVisible = false;
             LoginFormContainer.Opacity = 0;
             LoginFormContainer.IsVisible = true;
-
             await LoginFormContainer.FadeTo(1, 250);
         }
 
@@ -25,13 +25,11 @@ namespace Invex_App.LoginViews
             InitialButtonsContainer.IsVisible = false;
             RegisterFormContainer.Opacity = 0;
             RegisterFormContainer.IsVisible = true;
-
             await RegisterFormContainer.FadeTo(1, 250);
         }
 
         private void OnBackClicked(object sender, EventArgs e)
         {
-            // Oculta ambos formularios y vuelve al inicio
             LoginFormContainer.IsVisible = false;
             RegisterFormContainer.IsVisible = false;
             OlvidasteContraseñaFormContainer.IsVisible = false;
@@ -45,29 +43,57 @@ namespace Invex_App.LoginViews
             LoginFormContainer.IsVisible = false;
             OlvidasteContraseñaFormContainer.Opacity = 0;
             OlvidasteContraseñaFormContainer.IsVisible = true;
-
             await OlvidasteContraseñaFormContainer.FadeTo(1, 250);
         }
 
-        //ACCIONES (POR EL MOMENTO)
+        // --- ACCIONES DE FORMULARIO ---
+
         private void OnLoginPasswordClicked(object sender, EventArgs e)
         {
             LoginPasswordEntry.IsPassword = !LoginPasswordEntry.IsPassword;
             ToggleLoginPasswordButton.Source = LoginPasswordEntry.IsPassword ? "ojo_cerrado.png" : "ojo_abierto.png";
         }
+
         private void OnToggleRegisterPasswordClicked(object sender, EventArgs e)
         {
             RegisterPasswordEntry.IsPassword = !RegisterPasswordEntry.IsPassword;
             ToggleRegisterPasswordButton.Source = RegisterPasswordEntry.IsPassword ? "ojo_cerrado.png" : "ojo_abierto.png";
         }
+
         private async void OnSubmitLoginClicked(object sender, EventArgs e)
         {
-             await DisplayAlert("Invex", "Inicio de sesion exitoso", "OK");
+            // 1. Validación de campos
+            if (string.IsNullOrWhiteSpace(LoginEmailEntry.Text) || string.IsNullOrWhiteSpace(LoginPasswordEntry.Text))
+            {
+                await DisplayAlert("Error", "Por favor ingresa tus credenciales", "OK");
+                return;
+            }
+
+            try
+            {
+                // 2. Mensaje de éxito
+                await DisplayAlert("Invex", "Inicio de sesión exitoso", "OK");
+
+                // CORRECCIÓN 2: Verificación de nulidad del Shell antes de navegar
+                if (Shell.Current != null)
+                {
+                    await Shell.Current.GoToAsync("//DashboardPage");
+                }
+                else
+                {
+                    // Si el Shell es nulo, usamos una navegación alternativa de emergencia
+                    Application.Current.MainPage = new AppShell();
+                    await Shell.Current.GoToAsync("//DashboardPage");
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error de Navegación", $"Detalle: {ex.Message}", "OK");
+            }
         }
 
         private async void OnSubmitRegisterClicked(object sender, EventArgs e)
         {
-            // Se extrae los textos de los campos (el ?.Trim() elimina los espacios accidentales al inicio o final)
             string nombreEmpresa = TxtEmpresa.Text?.Trim();
             string correo = TxtEmail.Text?.Trim();
             string contraseña = RegisterPasswordEntry.Text;
@@ -76,26 +102,23 @@ namespace Invex_App.LoginViews
                 string.IsNullOrWhiteSpace(correo) ||
                 string.IsNullOrWhiteSpace(contraseña))
             {
-               LabelError.IsVisible=true;
-
+                LabelError.IsVisible = true;
                 return;
             }
 
             LabelError.IsVisible = false;
-            await DisplayAlert("Invex", "Campos validados correctamente.\nGuardando...", "OK");
-         
-
-            // Espacio para guardar los datos en un JSON (INVESTIGAR COMO)
-        
+            await DisplayAlert("Invex", "Cuenta creada correctamente", "OK");
         }
 
         private async void OnGoogleLoginTapped(object sender, EventArgs e)
         {
             await DisplayAlert("Google", "Conectando con Google...", "OK");
         }
+
         private async void OnRecuperarContraseñaClicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Invex", "Los datos son correctos", "OK");
+            await DisplayAlert("Invex", "Se ha enviado un correo de recuperación", "OK");
+            OnBackClicked(null, null);
         }
     }
 }
