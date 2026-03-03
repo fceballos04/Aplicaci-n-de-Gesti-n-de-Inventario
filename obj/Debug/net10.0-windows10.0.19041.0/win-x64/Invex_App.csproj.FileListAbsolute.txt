@@ -2093,3 +2093,7 @@ C:\Users\aldol\OneDrive\Escritorio\Proyecto Joshua\Aplicaci-n-de-Gesti-n-de-Inve
 C:\Users\aldol\OneDrive\Escritorio\Proyecto Joshua\Aplicaci-n-de-Gesti-n-de-Inventario\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ojo_cerrado.scale-100.png
 C:\Users\aldol\OneDrive\Escritorio\Proyecto Joshua\Aplicaci-n-de-Gesti-n-de-Inventario\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\ojo_abierto.scale-100.png
 C:\Users\aldol\OneDrive\Escritorio\Proyecto Joshua\Aplicaci-n-de-Gesti-n-de-Inventario\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\ojo_cerrado.scale-100.png
+C:\Users\aldol\OneDrive\Escritorio\Proyecto Joshua\Aplicaci-n-de-Gesti-n-de-Inventario\bin\Debug\net10.0-windows10.0.19041.0\win-x64\inventario_claro.scale-100.png
+C:\Users\aldol\OneDrive\Escritorio\Proyecto Joshua\Aplicaci-n-de-Gesti-n-de-Inventario\bin\Debug\net10.0-windows10.0.19041.0\win-x64\simbolo_oscuro.scale-100.png
+C:\Users\aldol\OneDrive\Escritorio\Proyecto Joshua\Aplicaci-n-de-Gesti-n-de-Inventario\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\inventario_claro.scale-100.png
+C:\Users\aldol\OneDrive\Escritorio\Proyecto Joshua\Aplicaci-n-de-Gesti-n-de-Inventario\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\simbolo_oscuro.scale-100.png

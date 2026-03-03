@@ -5,6 +5,13 @@
              x:Class="Invex_App.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Color x:Key="AppBackgroundColor">#000000</Color>
+            <Color x:Key="AppTextColor">#FFFFFF</Color>
+            <Color x:Key="AppButtonBorder">#FFFFFF</Color>
+
+            <Color x:Key="AppBackgroundColorClaro">#FFFFFF</Color>
+            <Color x:Key="AppTextColorClaro">#444444</Color>
+            <Color x:Key="AppButtonBorderClaro">#1A56A6</Color>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />

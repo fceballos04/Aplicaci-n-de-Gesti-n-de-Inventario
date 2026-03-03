@@ -97,5 +97,32 @@ namespace Invex_App.LoginViews
         {
             await DisplayAlert("Invex", "Datos correctos", "OK");
         }
+        bool esModoOscuro = true;
+
+        private void OnThemeToggleButtonClicked(object sender, EventArgs e)
+        {
+            esModoOscuro = !esModoOscuro;
+
+            if (esModoOscuro)
+            {
+                // MODO OSCURO
+                BackgroundImage.Source = "inventario.png";
+                ThemeToggleButton.Source = "simbolo_oscuro.png";
+                DarkOverlay.Opacity = 0.5; // Oscurece el fondo
+
+                Application.Current.Resources["AppTextColor"] = Color.FromArgb("#FFFFFF");
+                Application.Current.Resources["AppButtonBorder"] = Color.FromArgb("#FFFFFF");
+            }
+            else
+            {
+                // MODO CLARO
+                BackgroundImage.Source = "inventario_claro.png";
+                ThemeToggleButton.Source = "google.png"; // Puedes cambiar a un icono de sol luego
+                DarkOverlay.Opacity = 0.1; // Hace el fondo más brillante
+
+                Application.Current.Resources["AppTextColor"] = Color.FromArgb("#444444");
+                Application.Current.Resources["AppButtonBorder"] = Color.FromArgb("#1A56A6");
+            }
+        }
     }
 }

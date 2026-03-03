@@ -4,29 +4,30 @@
              NavigationPage.HasNavigationBar="False">
 
     <Grid>
-        <Image Source="inventario.png" Aspect="AspectFill" />
-        <BoxView Color="Black" Opacity="0.5" />
+        <Image x:Name="BackgroundImage" Source="inventario.png" Aspect="AspectFill" />
+        <BoxView x:Name="DarkOverlay" Color="Black" Opacity="0.5" />
+       
         <ScrollView>
 
         <VerticalStackLayout Spacing="20" Padding="40" VerticalOptions="Center">
 
-            <Label Text="ANTHIVE STOCK" TextColor="White" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
-            <Label Text="Gestión Inteligente de Stock" TextColor="#D1D1D1" FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
+                <Label Text="ANTHIVE STOCK" TextColor="{DynamicResource AppTextColor}" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="Gestión Inteligente de Stock" TextColor="{DynamicResource AppTextColor}" FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
 
             <VerticalStackLayout x:Name="InitialButtonsContainer" Spacing="20" IsVisible="True">
                 
                 <Button Text="INICIAR SESIÓN" 
                         BackgroundColor="#1A56A6" 
-                        TextColor="White" 
+                        TextColor="{DynamicResource AppTextColor}"
                         HeightRequest="55" 
                         CornerRadius="28"
                         Clicked="OnLoginClicked"/>
 
                 <Button Text="CREAR CUENTA" 
-                        BackgroundColor="Transparent" 
-                        BorderColor="White"
+                        TextColor="{DynamicResource AppTextColor}" 
+                        BorderColor="{DynamicResource AppButtonBorder}"
+                        BackgroundColor="Transparent"
                         BorderWidth="2"
-                        TextColor="White" 
                         HeightRequest="55" 
                         CornerRadius="28"
                         Clicked="OnCreateAccountClicked"/>
@@ -46,7 +47,7 @@
 
                         <Entry Placeholder="Correo electrónico" 
                        PlaceholderColor="#AAA" 
-                       TextColor="White" 
+                       TextColor="{DynamicResource AppTextColor}"
                        HeightRequest="50"/>
                     <Grid ColumnDefinitions="*, auto">
                         <Entry x:Name="LoginPasswordEntry"  Placeholder="Contraseña" 
@@ -166,5 +167,14 @@
 
         </VerticalStackLayout>
         </ScrollView>
+        <ImageButton x:Name="ThemeToggleButton"
+                 Source="simbolo_oscuro.png"
+                 HorizontalOptions="Start"
+                 VerticalOptions="Start"
+                 HeightRequest="40"
+                 WidthRequest="40"
+                 Margin="15"
+                 Clicked="OnThemeToggleButtonClicked"
+                 ZIndex="1" />
     </Grid>
 </ContentPage>
