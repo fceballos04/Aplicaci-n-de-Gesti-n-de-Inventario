@@ -7,6 +7,8 @@
         <Image Source="inventario.png" Aspect="AspectFill" />
         <BoxView Color="Black" Opacity="0.5" />
 
+
+
         <VerticalStackLayout Spacing="20" Padding="40" VerticalOptions="Center">
 
             <Label Text="ANTHIVE STOCK" TextColor="White" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
@@ -41,5 +43,6 @@
                 </Border>
             </VerticalStackLayout>
         </VerticalStackLayout>
+
     </Grid>
 </ContentPage>
