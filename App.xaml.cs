@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-// IMPORTANTE: Agrega el "using" de tu carpeta para que reconozca la página
-using Invex_App.LoginViews;
+﻿using Invex_App.LoginViews;
 
 namespace Invex_App
 {
@@ -9,13 +7,13 @@ namespace Invex_App
         public App()
         {
             InitializeComponent();
+
+            // ESTA ES LA LÍNEA MAESTRA:
+            // Al asignar AppShell, activas el menú de la izquierda y todas las rutas.
+            MainPage = new AppShell();
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            // Cambiamos 'new AppShell()' por tu página de Login
-            // Usamos NavigationPage para que puedas navegar después a otras carpetas
-            return new Window(new NavigationPage(new Login()));
-        }
+        // NO necesitas el método CreateWindow para un proyecto estándar de MAUI.
+        // Al quitarlo, dejas que AppShell tome el control total.
     }
 }

@@ -1,5 +1,4 @@
-using Microsoft.Maui.Controls;
-using Invex_App.Views; // CORRECCIÓN 1: Agregar el namespace de la carpeta Views
+using Invex_App.Views;
 
 namespace Invex_App.LoginViews
 {
@@ -8,32 +7,25 @@ namespace Invex_App.LoginViews
         public Login()
         {
             InitializeComponent();
-        
         }
 
-        // --- NAVEGACIÓN ENTRE CONTENEDORES (VISTAS INTERNAS) ---
+        // --- NAVEGACIÓN MODERNA CON SHELL ---
 
         private async void OnLoginClicked(object sender, EventArgs e)
         {
-
-=======
-            await Navigation.PushModalAsync(new SigIn(), animated: true);
-
+            // En lugar de PushModal, usamos la ruta que registramos en AppShell
+            await Shell.Current.GoToAsync("SigIn");
         }
 
         private async void OnCreateAccountClicked(object sender, EventArgs e)
         {
-
-=======
-            await Navigation.PushModalAsync(new Register(), animated: true);
-
+            // Usamos la ruta del registro
+            await Shell.Current.GoToAsync("Register");
         }
 
         private async void OnGoogleLoginTapped(object sender, EventArgs e)
         {
             await DisplayAlert("Google", "Conectando con Google...", "OK");
         }
-
-
     }
 }
