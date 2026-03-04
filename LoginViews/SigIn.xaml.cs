@@ -1,5 +1,7 @@
 namespace Invex_App.LoginViews;
 
+using Invex_App;
+
 using Invex_App.Interfaz;
 
 public partial class SigIn : ContentPage
@@ -29,6 +31,6 @@ public partial class SigIn : ContentPage
     {
         await DisplayAlert("Invex", "Inicio de sesion exitoso", "OK");
 
-        Application.Current.MainPage = new NavigationPage(new InterfazPage());
+        Application.Current.MainPage = new AppShell();
     }
 }

@@ -3,12 +3,44 @@
     x:Class="Invex_App.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:interfaz="clr-namespace:Invex_App.Interfaz"
     xmlns:local="clr-namespace:Invex_App"
-    Title="Invex_App">
+    Title="Invex_App"
+    xmlns:login="clr-namespace:Invex_App.LoginViews"
+    xmlns:views="clr-namespace:Invex_App.Interfaz"
+    FlyoutBehavior="Flyout">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <!-- ENCABEZADO DEL MENÚ -->
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout Padding="20" BackgroundColor="{StaticResource Primary}">
+            <Label Text="ANTHIVE STOCK"
+                   TextColor="White"
+                   FontSize="18"
+                   FontAttributes="Bold"/>
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+
+    <!-- MENÚ LATERAL -->
+
+    <FlyoutItem Title="Dashboard" Icon="dashboard.png">
+        <ShellContent
+            Title="Dashboard"
+            ContentTemplate="{DataTemplate views:InterfazPage}"
+            Route="InterfazPage"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Acerca de" Icon="Info.png">
+        <ShellContent
+            Title="Acerca de"
+            ContentTemplate="{DataTemplate interfaz:AboutPage}"
+            Route="AboutPage"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Configuración" Icon="settings.png">
+        <ShellContent
+            Title="Configuración"
+            ContentTemplate="{DataTemplate interfaz:SettingPage}"
+            Route="SettingPage"/>
+    </FlyoutItem>
 
 </Shell>
