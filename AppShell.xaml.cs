@@ -1,5 +1,7 @@
-﻿using Invex_App.LoginViews;
+using Invex_App.LoginViews;
 using Invex_App.Views;
+using Invex_App.Views; 
+
 
 namespace Invex_App
 {
@@ -8,6 +10,7 @@ namespace Invex_App
         public AppShell()
         {
             InitializeComponent();
+
 
             // 1. Registro de páginas de la carpeta LoginViews
             Routing.RegisterRoute("SigIn", typeof(SigIn));
@@ -28,6 +31,10 @@ namespace Invex_App
                 // Regresamos al Login y limpiamos el historial (usando //)
                 await Shell.Current.GoToAsync("//SigIn");
             }
+
+            // 2. Registramos la ruta usando la clase que está en Views
+            Routing.RegisterRoute("DashboardPage", typeof(DashboardPage));
+
         }
     }
 }
