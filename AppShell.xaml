@@ -50,19 +50,5 @@
         IconImageSource="logout.png"
         Clicked="OnLogoutClicked"/>
 
-    xmlns:login="clr-namespace:Invex_App.LoginViews"
-    xmlns:views="clr-namespace:Invex_App.Views"
-    Title="Invex_App"
-    FlyoutBehavior="Disabled">
-    <ShellContent
-        Title="Login"
-        ContentTemplate="{DataTemplate login:Login}"
-        Route="LoginPage" />
-
-    <ShellContent
-        Title="Dashboard"
-        ContentTemplate="{DataTemplate views:DashboardPage}"
-        Route="DashboardPage" />
-
 
 </Shell>
