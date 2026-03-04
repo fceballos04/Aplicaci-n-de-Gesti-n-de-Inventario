@@ -46,7 +46,9 @@ public partial class Register : ContentPage
         await DisplayAlert("Invex", "Campos validados correctamente.\nGuardando...", "OK");
 
 
-        // Espacio para guardar los datos en un JSON (INVESTIGAR COMO)
+        // Después de registrar, lo enviamos al Dashboard de una vez
+        // El "//" limpia el historial de navegación para que no pueda volver al registro con el botón de atrás
+        await Shell.Current.GoToAsync("//DashboardPage");
 
     }
 

@@ -18,12 +18,11 @@ namespace Invex_App.LoginViews
 
 
             await Navigation.PushModalAsync(new SigIn(), animated: true);
-
+            
         }
-
+        
         private async void OnCreateAccountClicked(object sender, EventArgs e)
         {
-
 
             await Navigation.PushModalAsync(new Register(), animated: true);
 
@@ -31,7 +30,7 @@ namespace Invex_App.LoginViews
 
         private async void OnGoogleLoginTapped(object sender, EventArgs e)
         {
-            await DisplayAlert("Google", "Conectando con Google...", "OK");
+            await DisplayAlert("Google", "Conectandose a Google...", "OK");
         }
 
 
