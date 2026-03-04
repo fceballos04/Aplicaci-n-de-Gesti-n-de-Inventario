@@ -1,4 +1,4 @@
-namespace Invex_App.Interfaz;
+namespace Invex_App.Views;
 
 public partial class AboutPage : ContentPage
 {

@@ -2,7 +2,6 @@ namespace Invex_App.LoginViews;
 
 using Invex_App;
 
-using Invex_App.Interfaz;
 
 public partial class SigIn : ContentPage
 {
@@ -29,6 +28,12 @@ public partial class SigIn : ContentPage
     }
     private async void OnSubmitLoginClicked(object sender, EventArgs e)
     {
+        // Aquí podrías validar si los campos están vacíos antes de entrar
+        if (string.IsNullOrWhiteSpace(LoginPasswordEntry.Text))
+        {
+            await DisplayAlert("Invex", "Por favor ingresa tu contraseña", "OK");
+            return;
+        }
         await DisplayAlert("Invex", "Inicio de sesion exitoso", "OK");
 
         Application.Current.MainPage = new AppShell();

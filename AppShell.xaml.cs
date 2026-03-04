@@ -1,4 +1,5 @@
-﻿using Invex_App.Interfaz;
+﻿using Invex_App.LoginViews;
+using Invex_App.Views;
 
 namespace Invex_App
 {
@@ -8,11 +9,25 @@ namespace Invex_App
         {
             InitializeComponent();
 
-            Routing.RegisterRoute("DashboardPage", typeof(Interfaz.InterfazPage));
-        }
-        private void OnSettingClicked(object sender, EventArgs e)
-        {
+            // 1. Registro de páginas de la carpeta LoginViews
+            Routing.RegisterRoute("SigIn", typeof(SigIn));
+            Routing.RegisterRoute("Register", typeof(Register));
+            Routing.RegisterRoute("ForgotPassword", typeof(ForgotPassword));
 
+            // 2. Registro de páginas de la carpeta Views
+            Routing.RegisterRoute("DashboardPage", typeof(DashboardPage));
+
+            // 3. (Opcional) Si creas la carpeta Modules, las registrarías aquí también
+            // Routing.RegisterRoute("InventoryHome", typeof(Modules.InventoryHome));
+        } 
+        private async void OnLogoutClicked(object sender, EventArgs e)
+        {
+            bool answer = await DisplayAlert("Salir", "¿Estás seguro de que quieres cerrar sesión?", "Sí", "No");
+            if (answer)
+            {
+                // Regresamos al Login y limpiamos el historial (usando //)
+                await Shell.Current.GoToAsync("//SigIn");
+            }
         }
     }
 }
