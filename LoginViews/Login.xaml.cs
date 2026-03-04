@@ -16,7 +16,7 @@ namespace Invex_App.LoginViews
         private async void OnLoginClicked(object sender, EventArgs e)
         {
 
-=======
+
             await Navigation.PushModalAsync(new SigIn(), animated: true);
 
         }
@@ -24,7 +24,7 @@ namespace Invex_App.LoginViews
         private async void OnCreateAccountClicked(object sender, EventArgs e)
         {
 
-=======
+
             await Navigation.PushModalAsync(new Register(), animated: true);
 
         }
