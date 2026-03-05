@@ -19,7 +19,7 @@ public partial class ForgotPassword : ContentPage
         // Espacio para guardar los datos en un JSON (INVESTIGAR COMO)
     private async void OnRecuperarContraseñaClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Invex", "Los datos son correctos", "OK");
+        await DisplayAlert("AntHive Stock", "Los datos son correctos", "OK");
     }
 }
 
