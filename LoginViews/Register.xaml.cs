@@ -23,7 +23,7 @@ public partial class Register : ContentPage
     }
     private async void OnSubmitLoginClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Invex", "Inicio de sesion exitoso", "OK");
+        await DisplayAlert("AntHive Stock", "Inicio de sesion exitoso", "OK");
     }
 
     private async void OnSubmitRegisterClicked(object sender, EventArgs e)
@@ -43,12 +43,7 @@ public partial class Register : ContentPage
         }
 
         LabelError.IsVisible = false;
-        await DisplayAlert("Invex", "Campos validados correctamente.\nGuardando...", "OK");
-
-
-        // Después de registrar, lo enviamos al Dashboard de una vez
-        // El "//" limpia el historial de navegación para que no pueda volver al registro con el botón de atrás
-        await Shell.Current.GoToAsync("//DashboardPage");
+        await DisplayAlert("AntHive Stock", "Campos validados correctamente.\nGuardando...", "OK");
 
     }
 
@@ -58,6 +53,6 @@ public partial class Register : ContentPage
     }
     private async void OnRecuperarContraseñaClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Invex", "Los datos son correctos", "OK");
+        await DisplayAlert("AntHive Stock", "Los datos son correctos", "OK");
     }
 }

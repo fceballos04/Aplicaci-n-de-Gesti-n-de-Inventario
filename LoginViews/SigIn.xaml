@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Invex_App.LoginViews.SigIn"
+             FlyoutItem.IsVisible="False"
              NavigationPage.HasNavigationBar="False">
     <Grid>
         <Image Source="inventario.png" Aspect="AspectFill" />
@@ -15,7 +16,8 @@
 
                 <VerticalStackLayout x:Name="LoginFormContainer" Spacing="15">
 
-                    <Entry Placeholder="Correo electrónico" 
+                    <Entry x:Name="LoginEmailEntry" 
+                           Placeholder="Correo electrónico" 
                            PlaceholderColor="#AAA" 
                            TextColor="White" 
                            HeightRequest="50"/>

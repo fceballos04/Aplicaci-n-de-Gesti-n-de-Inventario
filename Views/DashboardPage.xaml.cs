@@ -9,37 +9,25 @@ public partial class DashboardPage : ContentPage
 
     // --- EVENTOS DE LAS TARJETAS ---
 
-    private async void OnInventarioTapped(object sender, TappedEventArgs e)
+    private async void OnVentasClicked(object sender, EventArgs e)
     {
         // Por ahora solo mostramos un mensaje, luego nos llevará a la carpeta Modules
-        await DisplayAlert("Invex", "Abriendo el módulo de Inventario...", "OK");
+        await Shell.Current.GoToAsync("Ventas");
     }
-
-    private async void OnVentasTapped(object sender, TappedEventArgs e)
+    private async void OnInventarioClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Invex", "Cargando reportes de Ventas...", "OK");
+        // Por ahora solo mostramos un mensaje, luego nos llevará a la carpeta Modules
+        await DisplayAlert("AntHive Stock", "Abriendo el módulo de Inventario...", "OK");
     }
 
-    private async void OnAddProductTapped(object sender, TappedEventArgs e)
+    private async void OnAddProductClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Invex", "Abriendo formulario de Nuevo Producto", "OK");
+        await DisplayAlert("AntHive Stock", "Abriendo formulario de Nuevo Producto", "OK");
     }
 
-    private async void OnSettingsTapped(object sender, TappedEventArgs e)
+    private async void OnInformesClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Invex", "Configuración del Perfil", "OK");
+        await DisplayAlert("AntHive Stock", "Abriendo informes", "OK");
     }
 
-    // --- BOTÓN CERRAR SESIÓN ---
-
-    private async void OnLogoutClicked(object sender, EventArgs e)
-    {
-        bool answer = await DisplayAlert("Salir", "¿Estás seguro de que quieres cerrar sesión?", "Sí", "No");
-
-        if (answer)
-        {
-            // Regresamos al Login y limpiamos el historial (usando //)
-            await Shell.Current.GoToAsync("//LoginPage");
-        }
-    }
 }

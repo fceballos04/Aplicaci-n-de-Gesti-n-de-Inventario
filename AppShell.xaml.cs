@@ -1,5 +1,4 @@
 using Invex_App.LoginViews;
-using Invex_App.Views;
 using Invex_App.Views; 
 
 
@@ -19,9 +18,8 @@ namespace Invex_App
 
             // 2. Registro de páginas de la carpeta Views
             Routing.RegisterRoute("DashboardPage", typeof(DashboardPage));
+            Routing.RegisterRoute("Ventas", typeof(Ventas));
 
-            // 3. (Opcional) Si creas la carpeta Modules, las registrarías aquí también
-            // Routing.RegisterRoute("InventoryHome", typeof(Modules.InventoryHome));
         } 
         private async void OnLogoutClicked(object sender, EventArgs e)
         {
@@ -29,11 +27,11 @@ namespace Invex_App
             if (answer)
             {
                 // Regresamos al Login y limpiamos el historial (usando //)
-                await Shell.Current.GoToAsync("//SigIn");
+                Application.Current.MainPage = new LoginViews.Login();
             }
-
-            // 2. Registramos la ruta usando la clase que está en Views
-            Routing.RegisterRoute("DashboardPage", typeof(DashboardPage));
+            else 
+            { 
+            }
 
         }
     }

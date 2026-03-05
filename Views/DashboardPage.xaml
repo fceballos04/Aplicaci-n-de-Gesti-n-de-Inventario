@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Invex_App.Views.DashboardPage"
-
-             Title="Inicio - Dashboard"
+             Title="INICIO"
              BackgroundColor="#F5F6FA"
              Shell.NavBarIsVisible="True">
 
@@ -16,8 +15,12 @@
                         <Shadow Brush="Black" Offset="0,2" Opacity="0.1" Radius="5"/>
                     </Border.Shadow>
                     <VerticalStackLayout Padding="10" HorizontalOptions="Center">
-                        <Image Source="mensajes.png" HeightRequest="25"/>
-                        <Label Text="Mensajes" FontSize="12" HorizontalTextAlignment="Center" Margin="0,5,0,0"/>
+                        <Button Text="Inventario" 
+                                TextColor="{StaticResource PrimaryDarkText}"
+                                BackgroundColor="Transparent" 
+                                HorizontalOptions="Center"
+                                FontAttributes="Bold"
+                                Clicked="OnInventarioClicked"/>
                     </VerticalStackLayout>
                 </Border>
 
@@ -27,7 +30,7 @@
                     </Border.Shadow>
                     <VerticalStackLayout Padding="10" HorizontalOptions="Center">
                         <Image Source="bajo_stock.png" HeightRequest="25"/>
-                        <Label Text="Bajo Stock" FontSize="12" HorizontalTextAlignment="Center" Margin="0,5,0,0"/>
+                        <Label Text="Bajo Stock" FontSize="12" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="Black"/>
                     </VerticalStackLayout>
                 </Border>
 
@@ -37,7 +40,7 @@
                     </Border.Shadow>
                     <VerticalStackLayout Padding="10" HorizontalOptions="Center">
                         <Image Source="lotes.png" HeightRequest="25"/>
-                        <Label Text="Lotes" FontSize="12" HorizontalTextAlignment="Center" Margin="0,5,0,0"/>
+                        <Label Text="Lotes" FontSize="12" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="Black"/>
                     </VerticalStackLayout>
                 </Border>
             </Grid>
@@ -49,10 +52,12 @@
                 <Grid ColumnDefinitions="Auto, *, Auto" VerticalOptions="Center">
                     <Image Grid.Column="0" Source="buscar.png" HeightRequest="20" Margin="10,0"/>
 
-                    <Entry Grid.Column="1" 
+                    <Entry 
+                       Grid.Column="1" 
                        Placeholder="Buscar Código de Barras..." 
                        FontSize="14"
                        VerticalOptions="Center"
+                       TextColor="Black"
                        BackgroundColor="Transparent"/>
 
                     <Image Grid.Column="2" Source="qr_scan.png" HeightRequest="25" Margin="10,0"/>
@@ -70,8 +75,12 @@
                         <Shadow Brush="Black" Opacity="0.1" Radius="10"/>
                     </Border.Shadow>
                     <VerticalStackLayout VerticalOptions="Center">
-                        <Image Source="add_product.png" HeightRequest="45" Margin="0,0,0,10"/>
-                        <Label Text="Añadir Producto" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        <Button Text="Añadir Producto" 
+                                TextColor="{StaticResource PrimaryDarkText}"
+                                BackgroundColor="Transparent"
+                                HorizontalOptions="Center" 
+                                FontAttributes="Bold" 
+                                Clicked="OnAddProductClicked"/>
                     </VerticalStackLayout>
                 </Border>
 
@@ -80,8 +89,12 @@
                         <Shadow Brush="Black" Opacity="0.1" Radius="10"/>
                     </Border.Shadow>
                     <VerticalStackLayout VerticalOptions="Center">
-                        <Image Source="inventario.png" HeightRequest="45" Margin="0,0,0,10"/>
-                        <Label Text="Inventario" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        <Button Text="Ventas" 
+                                TextColor="{StaticResource PrimaryDarkText}"  
+                                FontAttributes="Bold" 
+                                BackgroundColor="Transparent"
+                                Clicked="OnVentasClicked"/>
+                        
                     </VerticalStackLayout>
                 </Border>
 
@@ -90,9 +103,15 @@
                         <Shadow Brush="Black" Opacity="0.1" Radius="10"/>
                     </Border.Shadow>
                     <VerticalStackLayout VerticalOptions="Center">
-                        <Image Source="informes.png" HeightRequest="45" Margin="0,0,0,10"/>
-                        <Label Text="Informes" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        <Button Text="Informes" 
+                                BackgroundColor="Transparent"
+                                HorizontalOptions="Center" 
+                                FontAttributes="Bold" 
+                                TextColor="{StaticResource PrimaryDarkText}"
+                                Clicked="OnInformesClicked"/>
+                        
                     </VerticalStackLayout>
+                    
                 </Border>
 
                 <Border Grid.Row="1" Grid.Column="1" StrokeShape="RoundRectangle 15" StrokeThickness="0" HeightRequest="140" BackgroundColor="White">
@@ -100,8 +119,11 @@
                         <Shadow Brush="Black" Opacity="0.1" Radius="10"/>
                     </Border.Shadow>
                     <VerticalStackLayout VerticalOptions="Center">
-                        <Image Source="scan_lotes.png" HeightRequest="45" Margin="0,0,0,10"/>
-                        <Label Text="Escanear Lotes" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        <Button Text="Escanear Lotes" 
+                                BackgroundColor="Transparent"
+                                HorizontalOptions="Center" 
+                                TextColor="{StaticResource PrimaryDarkText}"
+                                FontAttributes="Bold"/>
                     </VerticalStackLayout>
                 </Border>
 
