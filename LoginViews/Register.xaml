@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Invex_App.LoginViews.Register"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Image Source="inventario.png" Aspect="AspectFill" />
+        <BoxView Color="Black" Opacity="0.5" />
+        <ScrollView>
+
+            <VerticalStackLayout Spacing="20" Padding="40" VerticalOptions="Center">
+
+                <Label Text="ANTHIVE STOCK" TextColor="White" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="Gestión Inteligente de Stock" TextColor="#D1D1D1" FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
+
+                <VerticalStackLayout x:Name="RegisterFormContainer" Spacing="15">
+
+                    <Entry x:Name="TxtEmpresa" 
+                    Placeholder="Nombre de la empresa o negocio" 
+                    PlaceholderColor="#AAA" 
+                    TextColor="White" 
+                    HeightRequest="50"/>
+
+                    <Entry  x:Name="TxtEmail" 
+                     Placeholder="Correo electrónico" 
+                     PlaceholderColor="#AAA" 
+                     TextColor="White" 
+                     HeightRequest="50" 
+                     Keyboard="Email"/>
+
+                    <Grid ColumnDefinitions="*, auto">
+
+                        <Entry x:Name="RegisterPasswordEntry" 
+                            Placeholder="Contraseña" 
+                            PlaceholderColor="#AAA" 
+                            TextColor="White" 
+                            IsPassword="True" 
+                            HeightRequest="50"/>
+
+                        <ImageButton x:Name="ToggleRegisterPasswordButton" 
+                                  Grid.Column="1" 
+                                  Source="ojo_cerrado.png" 
+                                  HeightRequest="25" 
+                                  WidthRequest="25" 
+                                  VerticalOptions="Center" 
+                                  Margin="-40,0,10,0" 
+                                  Clicked="OnToggleRegisterPasswordClicked"/>
+                    </Grid>
+
+                    <Label x:Name="LabelError" 
+                        Text="Todos los campos son obligatorios" 
+                        TextColor="Red" 
+                        IsVisible="False" 
+                        FontSize="15"/>
+
+                    <Button Text="REGISTRARSE" 
+                     BackgroundColor="#1A56A6" 
+                     TextColor="White" 
+                     HeightRequest="55" 
+                     CornerRadius="28"
+                     Clicked="OnSubmitRegisterClicked"/>
+
+                    <Button Text="Volver" 
+                     TextColor="White" 
+                     BackgroundColor="Transparent" 
+                     Clicked="OnBackClicked"/>
+
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
