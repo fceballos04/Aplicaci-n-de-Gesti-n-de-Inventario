@@ -23,7 +23,7 @@
             <VerticalStackLayout Spacing="20" Padding="40" VerticalOptions="Center">
 
                 <Label Text="ANTHIVE STOCK" TextColor="{DynamicResource AppTextColor}" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
-                <Label Text="Gestión Inteligente de Stock" TextColor="{DynamicResource AppSubTitleColor}" FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
+                <Label Text="Gestión Inteligente de inventario" TextColor="{DynamicResource AppSubTitleColor}" FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
 
                 <VerticalStackLayout x:Name="LoginFormContainer" Spacing="15">
 

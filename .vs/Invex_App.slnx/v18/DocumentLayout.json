@@ -1,73 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\",
+  "WorkspaceRootPath": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\forgotpassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\forgotpassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\sigin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\sigin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\forgotpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\forgotpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\forgotpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\sigin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\sigin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\sigin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\forgotpassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\forgotpassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\sigin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\sigin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\loginviews\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:loginviews\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\views\\aboutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\views\\aboutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:views\\aboutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\copia anthive\\aplicaci-n-de-gesti-n-de-inventario\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|c:\\users\\aldol\\documents\\anthive stock\\aplicaci-n-de-gesti-n-de-inventario\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC594B0-7A32-E7D5-7D7E-1F676FEA61CD}|Invex_App.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -78,15 +78,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ForgotPassword.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\ForgotPassword.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\ForgotPassword.xaml.cs",
               "RelativeDocumentMoniker": "LoginViews\\ForgotPassword.xaml.cs",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\ForgotPassword.xaml.cs",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\ForgotPassword.xaml.cs",
               "RelativeToolTip": "LoginViews\\ForgotPassword.xaml.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAA9wBoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -94,11 +94,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "SigIn.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\SigIn.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\SigIn.xaml.cs",
               "RelativeDocumentMoniker": "LoginViews\\SigIn.xaml.cs",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\SigIn.xaml.cs",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\SigIn.xaml.cs",
               "RelativeToolTip": "LoginViews\\SigIn.xaml.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAcwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -106,11 +106,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Register.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Register.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Register.xaml.cs",
               "RelativeDocumentMoniker": "LoginViews\\Register.xaml.cs",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Register.xaml.cs",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Register.xaml.cs",
               "RelativeToolTip": "LoginViews\\Register.xaml.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAAAYwCQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -118,47 +118,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Register.xaml",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Register.xaml",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Register.xaml",
               "RelativeDocumentMoniker": "LoginViews\\Register.xaml",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Register.xaml",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Register.xaml",
               "RelativeToolTip": "LoginViews\\Register.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABpAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-05T06:08:07.716Z"
+              "WhenOpened": "2026-03-05T06:08:07.716Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "ForgotPassword.xaml",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\ForgotPassword.xaml",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\ForgotPassword.xaml",
               "RelativeDocumentMoniker": "LoginViews\\ForgotPassword.xaml",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\ForgotPassword.xaml",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\ForgotPassword.xaml",
               "RelativeToolTip": "LoginViews\\ForgotPassword.xaml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-05T06:05:50.287Z"
+              "WhenOpened": "2026-03-05T06:05:50.287Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "SigIn.xaml",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\SigIn.xaml",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\SigIn.xaml",
               "RelativeDocumentMoniker": "LoginViews\\SigIn.xaml",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\SigIn.xaml",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\SigIn.xaml",
               "RelativeToolTip": "LoginViews\\SigIn.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-05T05:52:12.274Z"
+              "WhenOpened": "2026-03-05T05:52:12.274Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Login.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml.cs",
               "RelativeDocumentMoniker": "LoginViews\\Login.xaml.cs",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml.cs",
               "RelativeToolTip": "LoginViews\\Login.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -166,13 +169,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Login.xaml",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml",
               "RelativeDocumentMoniker": "LoginViews\\Login.xaml",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\LoginViews\\Login.xaml",
               "RelativeToolTip": "LoginViews\\Login.xaml",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAABkAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-03-05T05:43:24.314Z",
               "EditorCaption": ""
@@ -181,9 +184,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Colors.xaml",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\Resources\\Styles\\Colors.xaml",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\Resources\\Styles\\Colors.xaml",
               "RelativeDocumentMoniker": "Resources\\Styles\\Colors.xaml",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\Resources\\Styles\\Colors.xaml",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\Resources\\Styles\\Colors.xaml",
               "RelativeToolTip": "Resources\\Styles\\Colors.xaml",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -193,9 +196,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "AboutPage.xaml",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\Views\\AboutPage.xaml",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\Views\\AboutPage.xaml",
               "RelativeDocumentMoniker": "Views\\AboutPage.xaml",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\Views\\AboutPage.xaml",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\Views\\AboutPage.xaml",
               "RelativeToolTip": "Views\\AboutPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -205,9 +208,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\MauiProgram.cs",
               "RelativeToolTip": "MauiProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -217,9 +220,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\MainPage.xaml.cs",
               "RelativeToolTip": "MainPage.xaml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAowBcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -229,9 +232,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\AppShell.xaml.cs",
               "RelativeToolTip": "AppShell.xaml.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwB8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -241,9 +244,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\App.xaml",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -254,9 +257,9 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\AppShell.xaml",
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AgIAACoAAAAAAAAAAAAAADIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -266,9 +269,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\MainPage.xaml",
               "RelativeToolTip": "MainPage.xaml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -278,9 +281,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\aldol\\Documents\\COPIA ANTHIVE\\Aplicaci-n-de-Gesti-n-de-Inventario\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\aldol\\Documents\\ANTHIVE STOCK\\Aplicaci-n-de-Gesti-n-de-Inventario\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAgwA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Invex_App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e58e13cdc81d60d44622f06811da2e3ede58ac83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+7aef6e32e0f35a8fde465e81c21e1a38502a0573")]
 [assembly: System.Reflection.AssemblyProductAttribute("Invex_App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Invex_App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
