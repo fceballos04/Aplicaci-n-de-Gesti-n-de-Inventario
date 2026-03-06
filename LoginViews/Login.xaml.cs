@@ -8,7 +8,9 @@ namespace Invex_App.LoginViews
         public Login()
         {
             InitializeComponent();
-        
+
+            ActualizarDiseñoSegunTema();
+
         }
 
         // --- NAVEGACIÓN ENTRE CONTENEDORES (VISTAS INTERNAS) ---
@@ -32,7 +34,7 @@ namespace Invex_App.LoginViews
         {
             await DisplayAlert("Google", "Conectandose a Google...", "OK");
         }
-<<<<<<< HEAD
+
         bool esModoOscuro = true;
 
         private void OnThemeToggleButtonClicked(object sender, EventArgs e)
@@ -43,26 +45,54 @@ namespace Invex_App.LoginViews
             {
                 // MODO OSCURO
                 BackgroundImage.Source = "inventario.png";
-                ThemeToggleButton.Source = "simbolo_oscuro.png";
-                DarkOverlay.Opacity = 0.5; // Oscurece el fondo
+                ThemeToggleButton.Source = "sol_simbolo.png";
+                DarkOverlay.Opacity = 0.5;
 
-                Application.Current.Resources["AppTextColor"] = Color.FromArgb("#FFFFFF");
-                Application.Current.Resources["AppButtonBorder"] = Color.FromArgb("#FFFFFF");
+                Application.Current.Resources["AppTextColor"] = Colors.White;
+                Application.Current.Resources["AppSubTitleColor"] = Color.FromArgb("#D1D1D1");
+                Application.Current.Resources["AppButtonBorder"] = Colors.White;
+                Application.Current.Resources["AppEntryTextColor"] = Colors.White;
             }
             else
             {
                 // MODO CLARO
                 BackgroundImage.Source = "inventario_claro.png";
-                ThemeToggleButton.Source = "google.png"; // Puedes cambiar a un icono de sol luego
-                DarkOverlay.Opacity = 0.1; // Hace el fondo más brillante
+                ThemeToggleButton.Source = "luna_simbolo.png";
+                DarkOverlay.Opacity = 0.1;
 
-                Application.Current.Resources["AppTextColor"] = Color.FromArgb("#444444");
-                Application.Current.Resources["AppButtonBorder"] = Color.FromArgb("#1A56A6");
+                Application.Current.Resources["AppTextColor"] = Colors.Black;
+                Application.Current.Resources["AppSubTitleColor"] = Color.FromArgb("#707070");
+                Application.Current.Resources["AppButtonBorder"] = Colors.Black;
+                Application.Current.Resources["AppEntryTextColor"] = Colors.Black;
             }
         }
-=======
 
+        private void ActualizarDiseñoSegunTema()
+        {
 
->>>>>>> e58e13cdc81d60d44622f06811da2e3ede58ac83
+            bool esOscuro = Application.Current.Resources["AppTextColor"].Equals(Colors.White);
+
+            if (esOscuro)
+            {
+                BackgroundImage.Source = "inventario.png";
+                ThemeToggleButton.Source = "sol_simbolo.png";
+                DarkOverlay.Opacity = 0.5;
+            }
+            else
+            {
+                BackgroundImage.Source = "inventario_claro.png";
+                ThemeToggleButton.Source = "luna_simbolo.png";
+                DarkOverlay.Opacity = 0.1;
+            }
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            
+            ActualizarDiseñoSegunTema();
+        }
+
     }
+
 }

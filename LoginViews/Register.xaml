@@ -4,27 +4,39 @@
              x:Class="Invex_App.LoginViews.Register"
              NavigationPage.HasNavigationBar="False">
     <Grid>
-        <Image Source="inventario.png" Aspect="AspectFill" />
-        <BoxView Color="Black" Opacity="0.5" />
+        <Image x:Name="BackgroundImage" Source="inventario.png" Aspect="AspectFill" />
+
+        <BoxView x:Name="DarkOverlay" Color="Black" Opacity="0.5" />
+
+        <ImageButton x:Name="ThemeToggleButton"
+             Source="{AppThemeBinding Light=luna_simbolo.png, Dark=sol_simbolo.png}" 
+             HorizontalOptions="Start"
+             VerticalOptions="Start"
+             HeightRequest="40"
+             WidthRequest="40"
+             Margin="20"
+             Clicked="OnThemeToggleButtonClicked"
+             ZIndex="5" />
+
         <ScrollView>
 
             <VerticalStackLayout Spacing="20" Padding="40" VerticalOptions="Center">
 
-                <Label Text="ANTHIVE STOCK" TextColor="White" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
-                <Label Text="Gestión Inteligente de Stock" TextColor="#D1D1D1" FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
+                <Label Text="ANTHIVE STOCK" TextColor="{DynamicResource AppTextColor}"  FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="Gestión Inteligente de Stock" TextColor="{DynamicResource AppSubTitleColor}"  FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
 
                 <VerticalStackLayout x:Name="RegisterFormContainer" Spacing="15">
 
                     <Entry x:Name="TxtEmpresa" 
                     Placeholder="Nombre de la empresa o negocio" 
-                    PlaceholderColor="#AAA" 
-                    TextColor="White" 
+                    PlaceholderColor="{DynamicResource AppSubTitleColor}"
+                    TextColor="{DynamicResource AppEntryTextColor}"
                     HeightRequest="50"/>
 
                     <Entry  x:Name="TxtEmail" 
                      Placeholder="Correo electrónico" 
-                     PlaceholderColor="#AAA" 
-                     TextColor="White" 
+                     PlaceholderColor="{DynamicResource AppSubTitleColor}" 
+                     TextColor="{DynamicResource AppEntryTextColor}" 
                      HeightRequest="50" 
                      Keyboard="Email"/>
 
@@ -32,8 +44,8 @@
 
                         <Entry x:Name="RegisterPasswordEntry" 
                             Placeholder="Contraseña" 
-                            PlaceholderColor="#AAA" 
-                            TextColor="White" 
+                            PlaceholderColor="{DynamicResource AppSubTitleColor}"
+                            TextColor="{DynamicResource AppEntryTextColor}"
                             IsPassword="True" 
                             HeightRequest="50"/>
 
@@ -61,7 +73,7 @@
                      Clicked="OnSubmitRegisterClicked"/>
 
                     <Button Text="Volver" 
-                     TextColor="White" 
+                     TextColor="{DynamicResource AppTextColor}" 
                      BackgroundColor="Transparent" 
                      Clicked="OnBackClicked"/>
 

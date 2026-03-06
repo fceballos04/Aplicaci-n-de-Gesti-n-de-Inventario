@@ -4,189 +4,50 @@
              NavigationPage.HasNavigationBar="False">
 
     <Grid>
-<<<<<<< HEAD
         <Image x:Name="BackgroundImage" Source="inventario.png" Aspect="AspectFill" />
         <BoxView x:Name="DarkOverlay" Color="Black" Opacity="0.5" />
-       
-        <ScrollView>
-=======
-        <Image Source="inventario.png" Aspect="AspectFill" />
-        <BoxView Color="Black" Opacity="0.5" />
 
-
->>>>>>> e58e13cdc81d60d44622f06811da2e3ede58ac83
-
-        <VerticalStackLayout Spacing="20" Padding="40" VerticalOptions="Center">
-
-                <Label Text="ANTHIVE STOCK" TextColor="{DynamicResource AppTextColor}" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
-                <Label Text="Gestión Inteligente de Stock" TextColor="{DynamicResource AppTextColor}" FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
-
-            <VerticalStackLayout x:Name="InitialButtonsContainer" Spacing="20" IsVisible="True">
-
-                <Button Text="INICIAR SESIÓN" 
-                        BackgroundColor="#1A56A6" 
-                        TextColor="{DynamicResource AppTextColor}"
-                        HeightRequest="55" 
-                        CornerRadius="28"
-                        Clicked="OnLoginClicked"/>
-
-                <Button Text="CREAR CUENTA" 
-                        TextColor="{DynamicResource AppTextColor}" 
-                        BorderColor="{DynamicResource AppButtonBorder}"
-                        BackgroundColor="Transparent"
-                        BorderWidth="2"
-                        HeightRequest="55" 
-                        CornerRadius="28"
-                        Clicked="OnCreateAccountClicked"/>
-
-                <Border StrokeShape="RoundRectangle 28" BackgroundColor="White" HeightRequest="55">
-                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="15">
-                        <Image Source="google.png" HeightRequest="25" VerticalOptions="Center"/>
-                        <Label Text="Continuar con Google" TextColor="#444" VerticalOptions="Center" FontAttributes="Bold"/>
-                    </HorizontalStackLayout>
-                    <Border.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnGoogleLoginTapped" />
-                    </Border.GestureRecognizers>
-                </Border>
-            </VerticalStackLayout>
-<<<<<<< HEAD
-               
-                    <VerticalStackLayout x:Name="LoginFormContainer" Spacing="15" IsVisible="False">
-
-                        <Entry Placeholder="Correo electrónico" 
-                       PlaceholderColor="#AAA" 
-                       TextColor="{DynamicResource AppTextColor}"
-                       HeightRequest="50"/>
-                    <Grid ColumnDefinitions="*, auto">
-                        <Entry x:Name="LoginPasswordEntry"  Placeholder="Contraseña" 
-                       PlaceholderColor="#AAA" TextColor="White" IsPassword="True" HeightRequest="50"/>
-
-                        <ImageButton x:Name="ToggleLoginPasswordButton"
-                                     Grid.Column="1"
-                                     Source="ojo_cerrado.png"
-                                     HeightRequest="25"
-                                     WidthRequest="25"
-                                     VerticalOptions="Center"
-                                     Margin="-40,0,10,0" 
-                                     Clicked="OnLoginPasswordClicked"/>
-                    </Grid>
-
-                    <Button Text="INGRESAR" 
-                        BackgroundColor="#1A56A6" 
-                        TextColor="White" 
-                        HeightRequest="55" 
-                        CornerRadius="28"
-                        Clicked="OnSubmitLoginClicked"/>
-
-                        <Button Text="Volver" 
-                        TextColor="White" 
-                        BackgroundColor="Transparent" 
-                        Clicked="OnBackClicked"/>
-
-                        <Button Text="¿Olvidaste la contraseña?" 
-                         BackgroundColor="Transparent" 
-                         TextColor="White" 
-                         HeightRequest="26" 
-                         CornerRadius="28"
-                         Margin="0,10"
-                         HorizontalOptions="Center"
-                         Clicked="OnOlvidasteContraseñaClicked"/>
-
-                    </VerticalStackLayout>
-              
-                <VerticalStackLayout x:Name="RegisterFormContainer" Spacing="15" IsVisible="False">
-
-                    <Entry x:Name="TxtEmpresa" 
-                       Placeholder="Nombre de la empresa o negocio" 
-                       PlaceholderColor="#AAA" 
-                       TextColor="White" 
-                       HeightRequest="50"/>
-
-                    <Entry  x:Name="TxtEmail" 
-                        Placeholder="Correo electrónico" 
-                        PlaceholderColor="#AAA" 
-                        TextColor="White" 
-                        HeightRequest="50" 
-                        Keyboard="Email"/>
-
-                    <Grid ColumnDefinitions="*, auto">
-                        
-                        <Entry x:Name="RegisterPasswordEntry" 
-                               Placeholder="Contraseña" 
-                               PlaceholderColor="#AAA" 
-                               TextColor="White" 
-                               IsPassword="True" 
-                               HeightRequest="50"/>
-
-                        <ImageButton x:Name="ToggleRegisterPasswordButton" 
-                                     Grid.Column="1" 
-                                     Source="ojo_cerrado.png" 
-                                     HeightRequest="25" 
-                                     WidthRequest="25" 
-                                     VerticalOptions="Center" 
-                                     Margin="-40,0,10,0" 
-                                     Clicked="OnToggleRegisterPasswordClicked"/>
-                    </Grid>
-
-                    <Label x:Name="LabelError" 
-                           Text="Todos los campos son obligatorios" 
-                           TextColor="Red" 
-                           IsVisible="False" 
-                           FontSize="15"/>
-
-                    <Button Text="REGISTRARSE" 
-                        BackgroundColor="#1A56A6" 
-                        TextColor="White" 
-                        HeightRequest="55" 
-                        CornerRadius="28"
-                        Clicked="OnSubmitRegisterClicked"/>
-
-                <Button Text="Volver" 
-                        TextColor="White" 
-                        BackgroundColor="Transparent" 
-                        Clicked="OnBackClicked"/>
-                
-            </VerticalStackLayout>
-            
-            <VerticalStackLayout x:Name="OlvidasteContraseñaFormContainer" Spacing="15" Padding="40" VerticalOptions="Center" IsVisible="False">
-                
-                <Label Text="Ingresa tu correo electronico para mandarte más información"
-                       HorizontalOptions="Center"
-                       TextColor="White"
-                       HeightRequest="25"/>
-
-                <Entry Placeholder="Correo electrónico" 
-                       PlaceholderColor="#AAA" 
-                       TextColor="White" 
-                       HeightRequest="50"/>
-
-                <Button Text="ENVIAR"
-                        TextColor="White"
-                        BackgroundColor="#1A56A6"                         
-                        HeightRequest="55" 
-                        CornerRadius="28"
-                        Clicked="OnRecuperarContraseñaClicked"/>
-
-                <Button Text="Volver" 
-                        TextColor="White" 
-                        BackgroundColor="Transparent" 
-                        Clicked="OnBackClicked"/>
-            </VerticalStackLayout>
-
-        </VerticalStackLayout>
-        </ScrollView>
         <ImageButton x:Name="ThemeToggleButton"
-                 Source="simbolo_oscuro.png"
-                 HorizontalOptions="Start"
-                 VerticalOptions="Start"
-                 HeightRequest="40"
-                 WidthRequest="40"
-                 Margin="15"
-                 Clicked="OnThemeToggleButtonClicked"
-                 ZIndex="1" />
-=======
-        </VerticalStackLayout>
+                     Source="sol_simbolo.png" 
+                     HorizontalOptions="Start"
+                     VerticalOptions="Start"
+                     HeightRequest="40"
+                     WidthRequest="40"
+                     Margin="20"
+                     Clicked="OnThemeToggleButtonClicked"
+                     ZIndex="1" />
 
->>>>>>> e58e13cdc81d60d44622f06811da2e3ede58ac83
+        <ScrollView>
+            <VerticalStackLayout Spacing="20" Padding="40" VerticalOptions="Center">
+                <Label Text="ANTHIVE STOCK" 
+                       TextColor="{DynamicResource AppTextColor}" 
+                       FontSize="45" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="Gestión Inteligente de inventario" 
+                       TextColor="{DynamicResource AppSubTitleColor}" 
+                       FontSize="16" HorizontalOptions="Center" Margin="0,0,0,30"/>
+
+                <VerticalStackLayout x:Name="InitialButtonsContainer" Spacing="20">
+                    <Button Text="INICIAR SESIÓN" BackgroundColor="#1A56A6" TextColor="White" 
+                            HeightRequest="55" CornerRadius="28" Clicked="OnLoginClicked"/>
+
+                    <Button Text="CREAR CUENTA" 
+                            BackgroundColor="Transparent" 
+                            BorderColor="{DynamicResource AppButtonBorder}"
+                            BorderWidth="2"
+                            TextColor="{DynamicResource AppTextColor}" 
+                            HeightRequest="55" CornerRadius="28" Clicked="OnCreateAccountClicked"/>
+
+                    <Border StrokeShape="RoundRectangle 28" BackgroundColor="White" HeightRequest="55">
+                        <HorizontalStackLayout HorizontalOptions="Center" Spacing="15">
+                            <Image Source="google.png" HeightRequest="25" VerticalOptions="Center"/>
+                            <Label Text="Continuar con Google" TextColor="#444" VerticalOptions="Center" FontAttributes="Bold"/>
+                        </HorizontalStackLayout>
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnGoogleLoginTapped" />
+                        </Border.GestureRecognizers>
+                    </Border>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
     </Grid>
 </ContentPage>

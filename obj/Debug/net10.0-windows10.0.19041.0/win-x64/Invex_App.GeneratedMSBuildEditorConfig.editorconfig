@@ -14,7 +14,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Invex_App
-build_property.ProjectDir = C:\Users\aldol\Documents\ANTHIVE STOCK\Aplicaci-n-de-Gesti-n-de-Inventario\
+build_property.ProjectDir = C:\Users\aldol\Documents\COPIA ANTHIVE\Aplicaci-n-de-Gesti-n-de-Inventario\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -28,7 +28,7 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/App.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
@@ -38,7 +38,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/AppShell.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
@@ -48,7 +48,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/LoginViews/ForgotPassword.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/LoginViews/ForgotPassword.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.LoginViews.ForgotPassword.xaml
 build_metadata.AdditionalFiles.TargetPath = LoginViews\ForgotPassword.xaml
@@ -58,7 +58,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/LoginViews/Login.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/LoginViews/Login.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.LoginViews.Login.xaml
 build_metadata.AdditionalFiles.TargetPath = LoginViews\Login.xaml
@@ -68,7 +68,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/LoginViews/Register.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/LoginViews/Register.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.LoginViews.Register.xaml
 build_metadata.AdditionalFiles.TargetPath = LoginViews\Register.xaml
@@ -78,7 +78,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/LoginViews/SigIn.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/LoginViews/SigIn.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.LoginViews.SigIn.xaml
 build_metadata.AdditionalFiles.TargetPath = LoginViews\SigIn.xaml
@@ -88,7 +88,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/MainPage.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
@@ -98,7 +98,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/Resources/Styles/Colors.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
@@ -108,7 +108,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/Resources/Styles/Styles.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
@@ -118,7 +118,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/Views/AboutPage.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/Views/AboutPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.Views.AboutPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\AboutPage.xaml
@@ -128,7 +128,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/Views/DashboardPage.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/Views/DashboardPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.Views.DashboardPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\DashboardPage.xaml
@@ -138,7 +138,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/aldol/Documents/ANTHIVE STOCK/Aplicaci-n-de-Gesti-n-de-Inventario/Views/SettingPage.xaml]
+[C:/Users/aldol/Documents/COPIA ANTHIVE/Aplicaci-n-de-Gesti-n-de-Inventario/Views/SettingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Invex_App.Views.SettingPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\SettingPage.xaml
