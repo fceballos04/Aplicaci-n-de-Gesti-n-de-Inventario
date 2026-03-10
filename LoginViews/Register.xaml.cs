@@ -39,28 +39,34 @@ public partial class Register : ContentPage
 
     private async void OnSubmitRegisterClicked(object sender, EventArgs e)
     {
-        // Se extrae los textos de los campos (el ?.Trim() elimina los espacios accidentales al inicio o final)
+
+        ErrorEmpresa.IsVisible = false;
+        ErrorEmail.IsVisible = false;
+        ErrorPassword.IsVisible = false;
+
         string nombreEmpresa = TxtEmpresa.Text?.Trim();
         string correo = TxtEmail.Text?.Trim();
         string contraseña = RegisterPasswordEntry.Text;
 
-        if (string.IsNullOrWhiteSpace(nombreEmpresa) ||
-            string.IsNullOrWhiteSpace(correo) ||
-            string.IsNullOrWhiteSpace(contraseña))
+        if (string.IsNullOrWhiteSpace(nombreEmpresa))
         {
-            LabelError.IsVisible = true;
-
+            ErrorEmpresa.IsVisible = true;
             return;
         }
 
-        LabelError.IsVisible = false;
+        if (string.IsNullOrWhiteSpace(correo))
+        {
+            ErrorEmail.IsVisible = true;
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(contraseña))
+        {
+            ErrorPassword.IsVisible = true;
+            return;
+        }
+
         await DisplayAlert("ANTHIVE STOCK", "Campos validados correctamente.\nGuardando...", "OK");
-
-
-        // Después de registrar, lo enviamos al Dashboard de una vez
-        // El "//" limpia el historial de navegación para que no pueda volver al registro con el botón de atrás
-        await Shell.Current.GoToAsync("//DashboardPage");
-
     }
 
     private async void OnGoogleLoginTapped(object sender, EventArgs e)

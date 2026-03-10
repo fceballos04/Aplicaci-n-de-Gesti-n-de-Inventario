@@ -14,13 +14,22 @@ public partial class ForgotPassword : ContentPage
         await Navigation.PopModalAsync(true); // El PopToRootAsync limpia todo y te deja en la raiz (Login)
     }
 
- //ACCIONES (POR EL MOMENTO)
+    //ACCIONES (POR EL MOMENTO)
 
 
-        // Espacio para guardar los datos en un JSON (INVESTIGAR COMO)
+    // Espacio para guardar los datos en un JSON (INVESTIGAR COMO)
     private async void OnRecuperarContraseñaClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("ANTHIVE STOCK", "Los datos son correctos", "OK");
+        ErrorEmail.IsVisible = false;
+
+        string email = TxtEmailRecuperar.Text?.Trim();
+
+        if (string.IsNullOrWhiteSpace(email))
+        {
+            ErrorEmail.IsVisible = true;
+            return;
+        }
+        await DisplayAlert("ANTHIVE STOCK", "Los datos son correctos. Se ha enviado información a su correo.", "OK");
     }
 
     private void OnThemeToggleButtonClicked(object sender, EventArgs e)

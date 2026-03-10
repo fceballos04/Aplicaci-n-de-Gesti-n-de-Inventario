@@ -33,12 +33,26 @@
                     TextColor="{DynamicResource AppEntryTextColor}"
                     HeightRequest="50"/>
 
+                    <Label x:Name="ErrorEmpresa" 
+                    Text="Todos los campos son obligatorios" 
+                    TextColor="Red" 
+                    FontSize="14" 
+                    IsVisible="False" 
+                    Margin="5,-10,0,0"/>
+
                     <Entry  x:Name="TxtEmail" 
-                     Placeholder="Correo electrónico" 
-                     PlaceholderColor="{DynamicResource AppSubTitleColor}" 
-                     TextColor="{DynamicResource AppEntryTextColor}" 
-                     HeightRequest="50" 
-                     Keyboard="Email"/>
+                    Placeholder="Correo electrónico" 
+                    PlaceholderColor="{DynamicResource AppSubTitleColor}" 
+                    TextColor="{DynamicResource AppEntryTextColor}" 
+                    HeightRequest="50" 
+                    Keyboard="Email"/>
+
+                    <Label x:Name="ErrorEmail" 
+                    Text="Todos los campos son obligatorios" 
+                    TextColor="Red" 
+                    FontSize="14" 
+                    IsVisible="False" 
+                    Margin="5,-10,0,0"/>
 
                     <Grid ColumnDefinitions="*, auto">
 
@@ -59,11 +73,12 @@
                                   Clicked="OnToggleRegisterPasswordClicked"/>
                     </Grid>
 
-                    <Label x:Name="LabelError" 
-                        Text="Todos los campos son obligatorios" 
-                        TextColor="Red" 
-                        IsVisible="False" 
-                        FontSize="15"/>
+                    <Label x:Name="ErrorPassword" 
+                    Text="Todos los campos son obligatorios" 
+                    TextColor="Red" 
+                    FontSize="14" 
+                    IsVisible="False" 
+                    Margin="5,0,0,0"/>
 
                     <Button Text="REGISTRARSE" 
                      BackgroundColor="#1A56A6" 

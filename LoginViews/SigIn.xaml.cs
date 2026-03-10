@@ -39,14 +39,25 @@ public partial class SigIn : ContentPage
     }
     private async void OnSubmitLoginClicked(object sender, EventArgs e)
     {
-        // Aquí podrías validar si los campos están vacíos antes de entrar
-        if (string.IsNullOrWhiteSpace(LoginPasswordEntry.Text))
+        ErrorEmail.IsVisible = false;
+        ErrorPassword.IsVisible = false;
+
+        string email = TxtEmail.Text?.Trim();
+        string password = LoginPasswordEntry.Text;
+
+        if (string.IsNullOrWhiteSpace(email))
         {
-            await DisplayAlert("ANTHIVE STOCK", "Por favor ingresa tu contraseña", "OK");
+            ErrorEmail.IsVisible = true;
             return;
         }
-        await DisplayAlert("ANTHIVE STOCK", "Inicio de sesion exitoso", "OK");
 
+        if (string.IsNullOrWhiteSpace(password))
+        {
+            ErrorPassword.IsVisible = true;
+            return;
+        }
+
+        await DisplayAlert("ANTHIVE STOCK", "Inicio de sesión exitoso", "OK");
         Application.Current.MainPage = new AppShell();
     }
 
