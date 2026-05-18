@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AntHiveStock.Views.DashboardPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:AntHiveStock.Models"
+    Title="Home"
+    BackgroundColor="#F8FAFC">
+
+    <ContentPage.Resources>
+        <Style x:Key="DashboardPillButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="LightCyan" />
+            <Setter Property="BorderColor" Value="#E2E8F0" />
+            <Setter Property="BorderWidth" Value="1" />
+            <Setter Property="CornerRadius" Value="14" />
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="Padding" Value="14,8" />
+            <Setter Property="TextColor" Value="#0F172A" />
+        </Style>
+
+        <Style x:Key="DashboardSummaryCardStyle" TargetType="Border">
+            <Setter Property="BackgroundColor" Value="#FFFFFF" />
+            <Setter Property="Padding" Value="14" />
+            <Setter Property="Stroke" Value="#E2E8F0" />
+            <Setter Property="StrokeShape" Value="RoundRectangle 8" />
+            <Setter Property="StrokeThickness" Value="1" />
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="Auto,*,Auto">
+        <ScrollView Grid.RowSpan="2">
+            <VerticalStackLayout Padding="24,20,24,96" Spacing="18">
+                <Grid ColumnDefinitions="*,48" ColumnSpacing="12">
+                    <VerticalStackLayout Spacing="2">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="28"
+                            Text="Item List"
+                            TextColor="#0F172A" />
+                        <Label
+                            FontSize="13"
+                            Text="{Binding StatusMessage}"
+                            TextColor="#64748B" />
+                    </VerticalStackLayout>
+
+                    <Button
+                        Grid.Column="1"
+                        Command="{Binding AddProductCommand}"
+                        CornerRadius="24"
+                        FontAttributes="Bold"
+                        FontSize="26"
+                        HeightRequest="48"
+                        Padding="0"
+                        Text="+"
+                        WidthRequest="48" />
+                </Grid>
+
+                <Border
+                    BackgroundColor="#EEF2F7"
+                    Padding="14,6"
+                    StrokeShape="RoundRectangle 8"
+                    StrokeThickness="0">
+                    <SearchBar
+                        BackgroundColor="Transparent"
+                        CancelButtonColor="#64748B"
+                        FontSize="15"
+                        HeightRequest="44"
+                        Placeholder="Buscar por nombre de producto"
+                        PlaceholderColor="#94A3B8"
+                        SearchCommand="{Binding LoadCommand}"
+                        Text="{Binding SearchText}"
+                        TextColor="#0F172A" />
+                </Border>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Button
+                        Command="{Binding LoadCommand}"
+                        Style="{StaticResource DashboardPillButtonStyle}"
+                        Text="Recientes" />
+                    <Button
+                        Command="{Binding ToggleStockFilterCommand}"
+                        Style="{StaticResource DashboardPillButtonStyle}"
+                        Text="En Stock" />
+                    <Button
+                        Command="{Binding ToggleSortCommand}"
+                        Style="{StaticResource DashboardPillButtonStyle}"
+                        Text="Ordenar" />
+                </HorizontalStackLayout>
+
+                <Grid ColumnDefinitions="*,*,*" ColumnSpacing="10">
+                    <Border Style="{StaticResource DashboardSummaryCardStyle}">
+                        <VerticalStackLayout Spacing="2">
+                            <Label FontSize="12" Text="Productos" TextColor="#64748B" />
+                            <Label FontAttributes="Bold" FontSize="22" Text="{Binding TotalProducts}" TextColor="#2563EB" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border Grid.Column="1" Style="{StaticResource DashboardSummaryCardStyle}">
+                        <VerticalStackLayout Spacing="2">
+                            <Label FontSize="12" Text="Stock" TextColor="#64748B" />
+                            <Label FontAttributes="Bold" FontSize="22" Text="{Binding TotalStock}" TextColor="#F97316" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border Grid.Column="2" Style="{StaticResource DashboardSummaryCardStyle}">
+                        <VerticalStackLayout Spacing="2">
+                            <Label FontSize="12" Text="Valor" TextColor="#64748B" />
+                            <Label FontAttributes="Bold" FontSize="18" Text="{Binding InventoryValue, StringFormat='{0:C0}'}" TextColor="#16A34A" />
+                        </VerticalStackLayout>
+                    </Border>
+                </Grid>
+
+                <CollectionView
+                    EmptyView="No se encontraron productos."
+                    ItemsSource="{Binding FilteredProducts}"
+                    SelectionMode="None">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Product">
+                            <Border
+                                Margin="0,0,0,10"
+                                Padding="14"
+                                BackgroundColor="#FFFFFF"
+                                Stroke="#E2E8F0"
+                                StrokeShape="RoundRectangle 8"
+                                StrokeThickness="1">
+                                <Grid ColumnDefinitions="56,*,Auto" ColumnSpacing="14" RowDefinitions="Auto,Auto">
+                                    <Border
+                                        Grid.RowSpan="2"
+                                        BackgroundColor="#E0E7FF"
+                                        HeightRequest="54"
+                                        StrokeThickness="0"
+                                        StrokeShape="RoundRectangle 8"
+                                        WidthRequest="54">
+                                        <Image
+                                            Aspect="AspectFit"
+                                            Margin="9"
+                                            Source="{Binding ImageSource}" />
+                                    </Border>
+
+                                    <Label
+                                        Grid.Column="1"
+                                        FontAttributes="Bold"
+                                        FontSize="17"
+                                        LineBreakMode="TailTruncation"
+                                        Text="{Binding Name}"
+                                        TextColor="#0F172A" />
+
+                                    <HorizontalStackLayout
+                                        Grid.Row="1"
+                                        Grid.Column="1"
+                                        Spacing="10">
+                                        <Label FontSize="13" Text="{Binding Category}" TextColor="#64748B" />
+                                        <Label FontSize="13" Text="{Binding Price, StringFormat='{0:C}'}" TextColor="#475569" />
+                                    </HorizontalStackLayout>
+
+                                    <VerticalStackLayout
+                                        Grid.RowSpan="2"
+                                        Grid.Column="2"
+                                        HorizontalOptions="End"
+                                        Spacing="6"
+                                        VerticalOptions="Center">
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="26"
+                                            HorizontalTextAlignment="End"
+                                            Text="{Binding Quantity}"
+                                            TextColor="#4F46E5" />
+                                        <Button
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.SellProductCommand}"
+                                            CommandParameter="{Binding .}"
+                                            CornerRadius="14"
+                                            FontSize="12"
+                                            Padding="10,6"
+                                            Text="Vendido" />
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

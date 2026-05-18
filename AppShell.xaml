@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AntHiveStock.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="AntHiveStock"
+    FlyoutBehavior="Flyout">
+
+    
+        <ShellContent
+            x:Name="DashboardContent"
+            Icon="home.png"
+            Title="Home"
+            Route="DashboardPage"/>
+
+    
+        <ShellContent
+            x:Name="InventoryContent"
+            Icon="box.png"
+            Title="Inventario"
+            Route="InventoryPage" />
+
+        <ShellContent
+            x:Name="SettingsContent"
+            Icon="settings.png"
+            Title="Ajustes"
+            Route="SettingsPage" />
+</Shell>

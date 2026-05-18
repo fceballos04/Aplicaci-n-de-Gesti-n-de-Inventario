@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AntHiveStock.Views.InventoryPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:AntHiveStock.Models"
+    Title="Inventario"
+    BackgroundColor="{DynamicResource InventoryPageBackgroundColor}">
+
+    <Grid Padding="24" RowDefinitions="Auto,Auto,*" RowSpacing="16">
+        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+            <VerticalStackLayout Spacing="4">
+                <Label
+                    Style="{DynamicResource InventoryTitleLabelStyle}"
+                    Text="Inventario" />
+                <Label
+                    Style="{DynamicResource InventorySubtitleLabelStyle}"
+                    Text="{Binding StatusMessage}" />
+            </VerticalStackLayout>
+
+            <Button
+                Grid.Column="1"
+                Command="{Binding ScanCodeCommand}"
+                Style="{DynamicResource SecondaryInventoryButtonStyle}"
+                Text="Escanear" />
+        </Grid>
+
+        <Grid
+            Grid.Row="1"
+            ColumnDefinitions="*,Auto,Auto"
+            ColumnSpacing="8">
+            <Button
+                Command="{Binding AddCommand}"
+                Text="Agregar" />
+            <Button
+                Grid.Column="1"
+                Command="{Binding EditCommand}"
+                CommandParameter="{Binding SelectedProduct}"
+                Style="{DynamicResource SecondaryInventoryButtonStyle}"
+                Text="Editar" />
+            <Button
+                Grid.Column="2"
+                Command="{Binding DeleteCommand}"
+                CommandParameter="{Binding SelectedProduct}"
+                Style="{DynamicResource DangerInventoryButtonStyle}"
+                Text="Eliminar" />
+        </Grid>
+
+        <CollectionView
+            Grid.Row="2"
+            EmptyView="No hay productos registrados."
+            ItemsSource="{Binding Products}"
+            SelectedItem="{Binding SelectedProduct, Mode=TwoWay}"
+            SelectionMode="Single">
+            <CollectionView.Header>
+                <Grid
+                    Padding="12,0,12,8"
+                    ColumnDefinitions="56,*,80,96"
+                    ColumnSpacing="12">
+                    <Label Grid.Column="1" Style="{DynamicResource InventoryHeaderLabelStyle}" Text="Producto" />
+                    <Label Grid.Column="2" Style="{DynamicResource InventoryHeaderLabelStyle}" Text="Stock" />
+                    <Label Grid.Column="3" Style="{DynamicResource InventoryHeaderLabelStyle}" Text="Precio" />
+                </Grid>
+            </CollectionView.Header>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Product">
+                    <Border Style="{DynamicResource InventoryCardStyle}">
+                        <HorizontalStackLayout Spacing="12">
+                            <Image
+                                Aspect="AspectFill"
+                                HeightRequest="48"
+                                Source="{Binding ImageSource}"
+                                WidthRequest="48" />
+
+                            <Label
+                                Style="{DynamicResource ProductNameLabelStyle}"
+                                Text="{Binding Name}"
+                                WidthRequest="180" />
+
+                            <Label
+                                Style="{DynamicResource ProductMetaLabelStyle}"
+                                Text="{Binding Quantity}"
+                                WidthRequest="72" />
+
+                            <Label
+                                Style="{DynamicResource ProductPriceLabelStyle}"
+                                Text="{Binding Price, StringFormat='{0:C}'}"
+                                WidthRequest="96" />
+                        </HorizontalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>
