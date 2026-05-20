@@ -5,24 +5,20 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:models="clr-namespace:AntHiveStock.Models"
     Title="Inventario"
-    BackgroundColor="{DynamicResource InventoryPageBackgroundColor}">
+    BackgroundColor="{DynamicResource AppBackgroundColor}">
 
     <Grid Padding="24" RowDefinitions="Auto,Auto,*" RowSpacing="16">
-        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+        <Grid>
             <VerticalStackLayout Spacing="4">
                 <Label
                     Style="{DynamicResource InventoryTitleLabelStyle}"
-                    Text="Inventario" />
+                    Text="Inventario"
+                    TextColor="{DynamicResource AppTextColor}" />
                 <Label
                     Style="{DynamicResource InventorySubtitleLabelStyle}"
-                    Text="{Binding StatusMessage}" />
+                    Text="{Binding StatusMessage}"
+                    TextColor="{DynamicResource AppSubTitleColor}" />
             </VerticalStackLayout>
-
-            <Button
-                Grid.Column="1"
-                Command="{Binding ScanCodeCommand}"
-                Style="{DynamicResource SecondaryInventoryButtonStyle}"
-                Text="Escanear" />
         </Grid>
 
         <Grid
@@ -55,38 +51,43 @@
             <CollectionView.Header>
                 <Grid
                     Padding="12,0,12,8"
-                    ColumnDefinitions="56,*,80,96"
+                    ColumnDefinitions="*,*,*,*"
                     ColumnSpacing="12">
                     <Label Grid.Column="1" Style="{DynamicResource InventoryHeaderLabelStyle}" Text="Producto" />
                     <Label Grid.Column="2" Style="{DynamicResource InventoryHeaderLabelStyle}" Text="Stock" />
                     <Label Grid.Column="3" Style="{DynamicResource InventoryHeaderLabelStyle}" Text="Precio" />
                 </Grid>
             </CollectionView.Header>
-
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Product">
                     <Border Style="{DynamicResource InventoryCardStyle}">
                         <HorizontalStackLayout Spacing="12">
+
                             <Image
-                                Aspect="AspectFill"
-                                HeightRequest="48"
-                                Source="{Binding ImageSource}"
-                                WidthRequest="48" />
+                                 Aspect="AspectFill"
+                                 HeightRequest="48"
+                                 Source="{Binding ImageSource}"
+                                 Grid.Column="0"
+                                 WidthRequest="48" />
 
-                            <Label
-                                Style="{DynamicResource ProductNameLabelStyle}"
-                                Text="{Binding Name}"
-                                WidthRequest="180" />
+                                <Label
+                                 Style="{DynamicResource ProductNameLabelStyle}"
+                                 Text="{Binding Name}"
+                                 Grid.Column="1"
+                                 WidthRequest="180" />
 
-                            <Label
-                                Style="{DynamicResource ProductMetaLabelStyle}"
-                                Text="{Binding Quantity}"
-                                WidthRequest="72" />
+                                <Label
+                                 Style="{DynamicResource ProductMetaLabelStyle}"
+                                 Text="{Binding Quantity}"
+                                 Grid.Column="2"
+                                 WidthRequest="72" />
 
-                            <Label
-                                Style="{DynamicResource ProductPriceLabelStyle}"
-                                Text="{Binding Price, StringFormat='{0:C}'}"
-                                WidthRequest="96" />
+                                <Label
+                                 Style="{DynamicResource ProductPriceLabelStyle}"
+                                 Text="{Binding Price, StringFormat='{0:C}'}"
+                                 Grid.Column="3"
+                                 WidthRequest="96" />
+                            
                         </HorizontalStackLayout>
                     </Border>
                 </DataTemplate>

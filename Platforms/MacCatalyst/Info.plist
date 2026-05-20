@@ -36,7 +36,7 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
-	<key>NSCameraUsageDescription</key>
-	<string>AntHiveStock usa la camara para escanear codigos de productos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>AntHiveStock usa la galeria para agregar imagenes a tus productos.</string>
 </dict>
 </plist>
