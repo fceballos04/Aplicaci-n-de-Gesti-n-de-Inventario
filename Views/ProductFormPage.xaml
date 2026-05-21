@@ -4,17 +4,19 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="{Binding PageTitle}"
-    BackgroundColor="{DynamicResource InventoryPageBackgroundColor}">
+    BackgroundColor="{DynamicResource AppBackgroundColor}">
 
     <ScrollView>
         <Grid Padding="24" RowDefinitions="Auto,Auto,Auto" RowSpacing="20">
             <VerticalStackLayout Spacing="4">
                 <Label
                     Style="{DynamicResource InventoryTitleLabelStyle}"
-                    Text="{Binding PageTitle}" />
+                    Text="{Binding PageTitle}"
+                    TextColor="{DynamicResource AppTextColor}" />
                 <Label
                     Style="{DynamicResource InventorySubtitleLabelStyle}"
-                    Text="Captura los datos principales del producto." />
+                    Text="Captura los datos principales del producto."
+                    TextColor="{DynamicResource AppSubTitleColor}" />
             </VerticalStackLayout>
 
             <VerticalStackLayout Grid.Row="1" Spacing="12">
@@ -37,6 +39,33 @@
                     Placeholder="0.00"
                     Style="{DynamicResource InventoryEntryStyle}"
                     Text="{Binding Price}" />
+
+                <Label Style="{DynamicResource InventoryHeaderLabelStyle}" Text="Imagen" />
+                <Grid ColumnDefinitions="96,*" ColumnSpacing="12">
+                    <Border
+                        BackgroundColor="{DynamicResource AppBackgroundColor}"
+                        HeightRequest="96"
+                        Stroke="{DynamicResource AppSubTitleColor}"
+                        StrokeShape="RoundRectangle 8"
+                        WidthRequest="96">
+                        <Image
+                            Aspect="AspectFill"
+                            Source="{Binding ProductImageSource}" />
+                    </Border>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        Spacing="8"
+                        VerticalOptions="Center">
+                        <Button
+                            Command="{Binding PickProductImageCommand}"
+                            Style="{DynamicResource SecondaryInventoryButtonStyle}"
+                            Text="Agregar imagen" />
+                        <Label
+                            Style="{DynamicResource InventorySubtitleLabelStyle}"
+                            Text="{Binding ImageMessage}" />
+                    </VerticalStackLayout>
+                </Grid>
 
                 <Label
                     Style="{DynamicResource InventoryValidationLabelStyle}"

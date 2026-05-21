@@ -5,11 +5,17 @@ using AntHiveStock.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
+using Microsoft.Maui.ApplicationModel;
+using Microsoft.Maui.Media;
+using Microsoft.Maui.Storage;
 
 namespace AntHiveStock.ViewModels;
 
 public partial class ProductFormViewModel : ObservableObject, IQueryAttributable
 {
+	private const string DefaultProductImageSource = "dotnet_bot.png";
+	private const string ProductImagesFolderName = "ProductImages";
+
 	private readonly DatabaseService databaseService;
 	private int productId;
 
@@ -24,6 +30,12 @@ public partial class ProductFormViewModel : ObservableObject, IQueryAttributable
 
 	[ObservableProperty]
 	public partial string Price { get; set; } = string.Empty;
+
+	[ObservableProperty]
+	public partial string ProductImageSource { get; set; } = DefaultProductImageSource;
+
+	[ObservableProperty]
+	public partial string ImageMessage { get; set; } = "Imagen predeterminada.";
 
 	[ObservableProperty]
 	public partial string ValidationMessage { get; set; } = string.Empty;
@@ -48,6 +60,8 @@ public partial class ProductFormViewModel : ObservableObject, IQueryAttributable
 		Name = string.Empty;
 		Quantity = string.Empty;
 		Price = string.Empty;
+		ProductImageSource = DefaultProductImageSource;
+		ImageMessage = "Imagen predeterminada.";
 		ValidationMessage = string.Empty;
 	}
 
@@ -66,7 +80,48 @@ public partial class ProductFormViewModel : ObservableObject, IQueryAttributable
 		Name = product.Name;
 		Quantity = product.Quantity.ToString(CultureInfo.InvariantCulture);
 		Price = product.Price.ToString("0.##", CultureInfo.InvariantCulture);
+		ProductImageSource = string.IsNullOrWhiteSpace(product.ImageSource)
+			? DefaultProductImageSource
+			: product.ImageSource;
+		ImageMessage = product.ImageSource == DefaultProductImageSource
+			? "Imagen predeterminada."
+			: "Imagen del producto cargada.";
 		ValidationMessage = string.Empty;
+	}
+
+	[RelayCommand]
+	private async Task PickProductImageAsync()
+	{
+		try
+		{
+			var images = await MediaPicker.Default.PickPhotosAsync(new MediaPickerOptions
+			{
+				Title = "Selecciona una imagen del producto"
+			});
+			var image = images?.FirstOrDefault();
+
+			if (image is null)
+			{
+				ImageMessage = "Seleccion de imagen cancelada.";
+				return;
+			}
+
+			ProductImageSource = await CopyImageToAppDataAsync(image);
+			ImageMessage = "Imagen agregada desde galeria.";
+			ValidationMessage = string.Empty;
+		}
+		catch (FeatureNotSupportedException)
+		{
+			ValidationMessage = "Este dispositivo no permite seleccionar imagenes.";
+		}
+		catch (PermissionException)
+		{
+			ValidationMessage = "Permiso para galeria denegado.";
+		}
+		catch (Exception)
+		{
+			ValidationMessage = "No fue posible agregar la imagen.";
+		}
 	}
 
 	[RelayCommand]
@@ -116,11 +171,33 @@ public partial class ProductFormViewModel : ObservableObject, IQueryAttributable
 			Name = Name.Trim(),
 			Quantity = quantity,
 			Category = "General",
-			ImageSource = "dotnet_bot.png",
+			ImageSource = string.IsNullOrWhiteSpace(ProductImageSource)
+				? DefaultProductImageSource
+				: ProductImageSource,
 			Price = price
 		};
 
 		ValidationMessage = string.Empty;
 		return true;
+	}
+
+	private static async Task<string> CopyImageToAppDataAsync(FileResult image)
+	{
+		var imagesDirectory = Path.Combine(FileSystem.AppDataDirectory, ProductImagesFolderName);
+		Directory.CreateDirectory(imagesDirectory);
+
+		var extension = Path.GetExtension(image.FileName);
+		if (string.IsNullOrWhiteSpace(extension))
+		{
+			extension = ".jpg";
+		}
+
+		var destinationPath = Path.Combine(imagesDirectory, $"{Guid.NewGuid():N}{extension}");
+
+		await using var sourceStream = await image.OpenReadAsync();
+		await using var destinationStream = File.Create(destinationPath);
+		await sourceStream.CopyToAsync(destinationStream);
+
+		return destinationPath;
 	}
 }

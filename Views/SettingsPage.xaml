@@ -1,12 +1,32 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="AntHiveStock.Views.SettingsPage"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Ajustes"
-    BackgroundColor="{DynamicResource InventoryPageBackgroundColor}">
-    <VerticalStackLayout Padding="24" Spacing="8">
-        <Label Style="{DynamicResource InventoryTitleLabelStyle}" Text="Ajustes" />
-        <Label Style="{DynamicResource InventorySubtitleLabelStyle}" Text="Preferencias de la aplicacion." />
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AntHiveStock.Views.SettingsPage"
+             Title="Ajustes"
+             BackgroundColor="{DynamicResource AppBackgroundColor}">
+
+    <VerticalStackLayout Padding="24" Spacing="20">
+        <VerticalStackLayout Spacing="4">
+            <Label Text="Ajustes" FontSize="28" FontAttributes="Bold" TextColor="{DynamicResource AppTextColor}"/>
+            <Label Text="Configura la apariencia de AntHive Stock" FontSize="14" TextColor="{DynamicResource AppSubTitleColor}"/>
+        </VerticalStackLayout>
+
+        <Border StrokeShape="RoundRectangle 12" 
+                BackgroundColor="{DynamicResource AppCardColor}" 
+                Padding="15" 
+                StrokeThickness="1" 
+                Stroke="{DynamicResource AppBorderColor}">
+
+            <Grid ColumnDefinitions="*, Auto" VerticalOptions="Center">
+                <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+                    <Label Text="Tema de la aplicación" FontSize="16" FontAttributes="Bold" TextColor="{DynamicResource AppTextColor}"/>
+                    <Label Text="Alternar entre modo claro y oscuro" FontSize="12" TextColor="{DynamicResource AppSubTitleColor}"/>
+                </VerticalStackLayout>
+
+                <Switch Grid.Column="1" 
+                        x:Name="ThemeSwitch"
+                        Toggled="OnThemeToggled"
+                        VerticalOptions="Center" />
+            </Grid>
+        </Border>
     </VerticalStackLayout>
 </ContentPage>

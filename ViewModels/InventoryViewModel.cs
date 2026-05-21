@@ -5,7 +5,6 @@ using AntHiveStock.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
-using Microsoft.Maui.Media;
 using AntHiveStock.Views;
 
 namespace AntHiveStock.ViewModels;
@@ -111,40 +110,6 @@ public partial class InventoryViewModel : ObservableObject
 		SelectedProduct = null;
 		StatusMessage = $"{product.Name} eliminado.";
 		WeakReferenceMessenger.Default.Send(new ProductDeletedMessage(product.Id));
-	}
-
-	[RelayCommand]
-	private async Task ScanCodeAsync()
-	{
-		try
-		{
-			if (!MediaPicker.Default.IsCaptureSupported)
-			{
-				StatusMessage = "Camara no disponible. Escaneo simulado correctamente.";
-				return;
-			}
-
-			var photo = await MediaPicker.Default.CapturePhotoAsync(new MediaPickerOptions
-			{
-				Title = "Escanear codigo"
-			});
-
-			StatusMessage = photo is null
-				? "Escaneo cancelado."
-				: "Camara abierta. Imagen capturada para el flujo de escaneo.";
-		}
-		catch (FeatureNotSupportedException)
-		{
-			StatusMessage = "Este dispositivo no soporta captura con camara.";
-		}
-		catch (PermissionException)
-		{
-			StatusMessage = "Permiso de camara denegado.";
-		}
-		catch (Exception)
-		{
-			StatusMessage = "No fue posible abrir la camara. Escaneo simulado.";
-		}
 	}
 
 	private static IEnumerable<Product> GetSeedProducts()

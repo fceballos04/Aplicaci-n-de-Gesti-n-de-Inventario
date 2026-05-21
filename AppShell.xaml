@@ -6,23 +6,36 @@
     Title="AntHiveStock"
     FlyoutBehavior="Flyout">
 
-    
-        <ShellContent
-            x:Name="DashboardContent"
-            Icon="home.png"
-            Title="Home"
-            Route="DashboardPage"/>
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout BackgroundColor="#1A56A6" Padding="20" Spacing="5">
+            <Image Source="dotnet_bot.png" HeightRequest="60" WidthRequest="60" HorizontalOptions="Start" Margin="0,0,0,10"/>
 
-    
-        <ShellContent
-            x:Name="InventoryContent"
-            Icon="box.png"
-            Title="Inventario"
-            Route="InventoryPage" />
+            <Label x:Name="LblFlyoutEmpresa" Text="Invitado" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+            <Label x:Name="LblFlyoutCorreo" Text="correo@ejemplo.com" TextColor="#D1D1D1" FontSize="14"/>
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
 
-        <ShellContent
-            x:Name="SettingsContent"
-            Icon="settings.png"
-            Title="Ajustes"
-            Route="SettingsPage" />
+    <ShellContent
+        x:Name="DashboardContent"
+        Icon="home.png"
+        Title="Home"
+        Route="DashboardPage"/>
+
+    <ShellContent
+        x:Name="InventoryContent"
+        Icon="box.png"
+        Title="Inventario"
+        Route="InventoryPage" />
+
+    <ShellContent
+        x:Name="SettingsContent"
+        Icon="settings.png"
+        Title="Ajustes"
+        Route="SettingsPage" />
+
+    <MenuItem 
+        Text="Cerrar Sesión"
+        IconImageSource="dotnet_bot.png"
+        Clicked="OnLogoutClicked" />
+
 </Shell>
